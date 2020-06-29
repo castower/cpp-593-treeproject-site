@@ -14,7 +14,7 @@ main:
   #   url: /test.html/
 
 nav:
-  - title: "Navigation"
+  - title: "On This Page"
     #url: /parent-1-page-url/
     children:
       - title: "Introduction"
