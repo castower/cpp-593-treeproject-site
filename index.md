@@ -61,7 +61,7 @@ sidebar:
 <hr>
 
 <center>
-  <h1> References </h1>
+  <h1 id = "References">References</h1>
 </center>
   <p>
   <ul>
