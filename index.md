@@ -15,7 +15,7 @@ toc: true
 {% include feature_row id="intro" type="center" %}
 
 <center> 
-  <h1> Introduction </h1>
+  # Introduction
 </center>
 
   <p markdown="1"> As the previous quote by biologist [Colin Tudge](http://www.colintudge.com/) espouses, trees play an essential role in the lives of humans, animals, and plants in the physical environment. Research on the widespread aesthetic, physical, and public health benefits of trees have led policymakers in urban areas that have previously been labeled as “concrete jungles” to begin expanding the tree canopy coverage in their cities through the planting of urban forests and other green spaces (“Benefits of trees”, 2019; Endreny, 2018; Kabisch et al., 2017). </p>
