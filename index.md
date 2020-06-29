@@ -130,7 +130,7 @@ sidebar:
 ---
 
 <center>
-  <h1> Author </h1>
+  <h1 id = "Author">Author</h1>
 </center>
   <p> Courtney Stowers </p>
   
