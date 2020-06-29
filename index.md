@@ -1,6 +1,7 @@
 ---
 title: " "
 layout: single
+classes: wide
 header:
   overlay_filter: "0.5"
   overlay_image: /assets/images/tree-image-1.jpg #/assets/images/unsplash-image-1.jpg
@@ -9,7 +10,6 @@ header:
 intro: 
   - excerpt: '<i> “Trees are right at the heart of all the necessary debates: ecological, social, economic, political, moral, religious.”
     ― Colin Tudge </i>'
-toc: true
 sidebar:
   nav: "nav"
 ---
@@ -17,7 +17,7 @@ sidebar:
 {% include feature_row id="intro" type="center" %}
 
 <center> 
-  <h1 id = "Introduction"> Introduction </h1>
+  <h1 id = "Introduction">Introduction</h1>
 </center>
 
   <p markdown="1"> As the previous quote by biologist [Colin Tudge](http://www.colintudge.com/) espouses, trees play an essential role in the lives of humans, animals, and plants in the physical environment. Research on the widespread aesthetic, physical, and public health benefits of trees have led policymakers in urban areas that have previously been labeled as “concrete jungles” to begin expanding the tree canopy coverage in their cities through the planting of urban forests and other green spaces (“Benefits of trees”, 2019; Endreny, 2018; Kabisch et al., 2017). </p>
