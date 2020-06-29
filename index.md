@@ -10,6 +10,8 @@ intro:
   - excerpt: '<i> “Trees are right at the heart of all the necessary debates: ecological, social, economic, political, moral, religious.”
     ― Colin Tudge </i>'
 toc: true
+sidebar:
+  nav: "nav"
 ---
 
 {% include feature_row id="intro" type="center" %}
