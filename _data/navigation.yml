@@ -12,3 +12,12 @@ main:
   #   url: /sitemap/
   # - title: "Test"
   #   url: /test.html/
+
+nav:
+  - title: "Navigation"
+    #url: /parent-1-page-url/
+    children:
+      - title: "Introduction"
+        url: /index/#Introduction
+      - title: "Packages"
+        url: https://castower.github.io/cpp-593-treeproject-site/#Packages
