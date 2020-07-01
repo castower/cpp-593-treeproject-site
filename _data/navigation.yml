@@ -14,8 +14,8 @@ main:
   #   url: /test.html/
 
 nav:
-   - title: "Navigation"
-     # url: /#top
+  - title: "On This Page"
+    #url: /parent-1-page-url/
     children:
       - title: "Introduction"
         url: /#Introduction
@@ -25,5 +25,3 @@ nav:
         url: /#References
       - title: "Author"
         url: /#Author
-   - title: "Tree Census"
-     url: /#top
