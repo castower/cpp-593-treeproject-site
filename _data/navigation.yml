@@ -16,17 +16,20 @@ main:
 nav:
   - title: "Introduction"
     url: /#Introduction
-
-  - title: "Remote Tree Census"
-    url: /#top
     children:
+      - title: "Remote Tree Census"
+        url: /#top
       - title: "LiDAR"
         url: /#Introduction
       - title: "R/RStudio"
         url: /#Packages
-  
-  - title: "References"
-    url: /#References
-   
-  - title: "Author"
-    url: /#Author
+      - title: "Code-Through"
+        url: /#Packages
+      - title: "Packages"
+        url: /#Packages
+      - title: "Map"
+        url: /#Packages
+      - title: "References"
+        url: /#References
+      - title: "Author"
+        url: /#Author
