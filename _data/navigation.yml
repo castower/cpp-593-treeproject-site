@@ -23,6 +23,7 @@ nav:
         url: /#Packages
           children:
             - title: "Test"
+              url: /#top
       - title: "References"
         url: /#References
       - title: "Author"
