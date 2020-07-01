@@ -15,25 +15,18 @@ main:
 
 nav:
   - title: "Introduction"
-    url: /#top
-    children:
-      - title: "Introduction"
-        url: /#Introduction
-      - title: "Packages"
-        url: /#Packages
-      - title: "References"
-        url: /#References
-      - title: "Author"
-        url: /#Author
+    url: /#Introduction
 
-  - title: "On This Page"
+  - title: "Remote Tree Census"
     url: /#top
     children:
-      - title: "Introduction"
+      - title: "LiDAR"
         url: /#Introduction
-      - title: "Packages"
+      - title: "R/RStudio"
         url: /#Packages
-      - title: "References"
-        url: /#References
-      - title: "Author"
-        url: /#Author
+  
+  - title: "References"
+    url: /#References
+   
+   - title: "Author"
+     url: /#Author
