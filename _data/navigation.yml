@@ -14,9 +14,11 @@ main:
   #   url: /test.html/
 
 nav:
-  - title: "Introduction"
-    url: /#Introduction
+  - title: "On This Page"
+    url: /#top
     children:
+      - title: "Introduction"
+        url: /#Introduction
       - title: "Remote Tree Census"
         url: /#top
       - title: "LiDAR"
