@@ -18,7 +18,7 @@ sidebar:
 
 <style type="text/css">
 #masthead a:link {
-  color: white;
+  color: #fff;
   background-color: transparent;
   text-decoration: none;
 }
