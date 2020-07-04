@@ -81,7 +81,7 @@ sidebar:
 
   <p markdown= "1"> You can read more on the NOAA website [here](https://oceanservice.noaa.gov/facts/lidar.html). </p>
   
-  <p> In addition, the following U.S. government websites provide access to free, publicly available LiDAR data sets: </p>
+  <p> The following websites provide access to free, publicly available LiDAR data sets: </p>
   
   <p>
   <ul>
