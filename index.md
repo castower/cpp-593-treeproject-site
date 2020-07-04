@@ -50,13 +50,15 @@ sidebar:
 
   <h3 markdown= "1"> **What is LiDAR data?** </h3>
   
+  <br>
+  
   <p markdown= "1"> LiDAR is an acronym for _**Light Detection And Ranging**_. </p>
   
   <p markdown= "1"> The National Ocean Service of the [National Oceanic and Atmospheric Administration (NOAA)](https://oceanservice.noaa.gov/facts/lidar.html) describes it as "a remote sensing method that uses light in the form of a pulsed laser to measure ranges (variable distances) to the Earth. These light pulses—combined with other data recorded by the airborne system — generate precise, three-dimensional information about the shape of the Earth and its surface characteristics...[t]opographic lidar typically uses a near-infrared laser to map the land." </p> 
   
-  <p markdown= "1"> Further, the NOAA explains the process of collecting LiDAR data in the following way:
+  <p markdown= "1"> Further, the NOAA explains the process of collecting LiDAR data in the following way: </p>
   
->When an airborne laser is pointed at a targeted area on the ground, the beam of 
+<p markdown= "1"> >When an airborne laser is pointed at a targeted area on the ground, the beam of 
 >light is reflected by the surface it encounters. A sensor records this reflected light
 >to measure a range. When laser ranges are combined with position and orientation data
 >generated from integrated GPS and Inertial Measurement Unit systems, scan angles, and
