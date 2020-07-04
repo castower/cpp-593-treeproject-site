@@ -50,30 +50,28 @@ sidebar:
 
   <h3 markdown= "1"> **What is LiDAR data?** </h3>
   
-  <br>
-  
   <p markdown= "1"> LiDAR is an acronym for _**Light Detection And Ranging**_. </p>
   
   <p markdown= "1"> The National Ocean Service of the [National Oceanic and Atmospheric Administration (NOAA)](https://oceanservice.noaa.gov/facts/lidar.html) describes it as "a remote sensing method that uses light in the form of a pulsed laser to measure ranges (variable distances) to the Earth. These light pulses—combined with other data recorded by the airborne system — generate precise, three-dimensional information about the shape of the Earth and its surface characteristics...[t]opographic lidar typically uses a near-infrared laser to map the land." </p> 
   
   <p markdown= "1"> Further, the NOAA explains the process of collecting LiDAR data in the following way: </p>
-  
-<p markdown= "1"> >When an airborne laser is pointed at a targeted area on the ground, the beam of 
->light is reflected by the surface it encounters. A sensor records this reflected light
->to measure a range. When laser ranges are combined with position and orientation data
->generated from integrated GPS and Inertial Measurement Unit systems, scan angles, and
->calibration data, the result is a dense, detail-rich group of elevation points, called
->a "point cloud."
->
->Each point in the point cloud has three-dimensional spatial coordinates (latitude,
->longitude, and height) that correspond to a particular point on the Earth's surface
->from which a laser pulse was reflected. The point clouds are used to generate other
->geospatial products, such as digital elevation models, canopy models, building models,
->and contours.
 
-  You can read more on the NOAA website here: [https://oceanservice.noaa.gov/facts/lidar.html](https://oceanservice.noaa.gov/facts/lidar.html)
-  
-  </p>
+  <blockquote markdown= "1">
+  When an airborne laser is pointed at a targeted area on the ground, the beam of 
+  light is reflected by the surface it encounters. A sensor records this reflected light
+  to measure a range. When laser ranges are combined with position and orientation data
+  generated from integrated GPS and Inertial Measurement Unit systems, scan angles, and
+  calibration data, the result is a dense, detail-rich group of elevation points, called
+  a "point cloud."
+
+  Each point in the point cloud has three-dimensional spatial coordinates (latitude,
+  longitude, and height) that correspond to a particular point on the Earth's surface
+  from which a laser pulse was reflected. The point clouds are used to generate other
+  geospatial products, such as digital elevation models, canopy models, building models,
+  and contours.
+  </blockquote>
+
+  <p> You can read more on the NOAA website here: [https://oceanservice.noaa.gov/facts/lidar.html](https://oceanservice.noaa.gov/facts/lidar.html) </p>
   
   <p> In addition, the following U.S. government websites provide access to free, publicly available LiDAR data sets: </p>
   
