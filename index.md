@@ -17,8 +17,8 @@ sidebar:
 {% include feature_row id="intro" type="center" %}
 
 <style type="text/css">
-a:link {
-  color: green;
+#masthead a:link {
+  color: white;
   background-color: transparent;
   text-decoration: none;
 }
