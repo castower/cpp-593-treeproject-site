@@ -16,6 +16,14 @@ sidebar:
 
 {% include feature_row id="intro" type="center" %}
 
+<style type="text/css">
+a:link {
+  color: green;
+  background-color: transparent;
+  text-decoration: none;
+}
+</style>
+
 <center> 
   <h1 id = "Introduction">Introduction</h1>
 </center>
