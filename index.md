@@ -71,15 +71,15 @@ sidebar:
   and contours.
   </blockquote>
 
-  <p> You can read more on the NOAA website here: [https://oceanservice.noaa.gov/facts/lidar.html](https://oceanservice.noaa.gov/facts/lidar.html) </p>
+  <p markdown= "1"> You can read more on the NOAA website here: [https://oceanservice.noaa.gov/facts/lidar.html](https://oceanservice.noaa.gov/facts/lidar.html) </p>
   
   <p> In addition, the following U.S. government websites provide access to free, publicly available LiDAR data sets: </p>
   
-  <p>
+  <p markdown= "1">
   <ul>
-  <li markdown= "1"> GeoPlatform.gov: [https://www.geoplatform.gov/](https://www.geoplatform.gov/) </li> 
-  <li markdown= "1"> Data.gov: [https://catalog.data.gov/dataset/lidar-point-cloud-usgs-national-map](https://catalog.data.gov/dataset/lidar-point-cloud-usgs-national-map) </li>
-  <li markdown= "1"> USGS.gov: [https://www.usgs.gov/faqs/what-lidar-data-and-where-can-i-download-it?qt-news_science_products=0#qt-news_science_products](https://www.usgs.gov/faqs/what-lidar-data-and-where-can-i-download-it?qt-news_science_products=0#qt-news_science_products ) </li>
+  <li> GeoPlatform.gov: [https://www.geoplatform.gov/](https://www.geoplatform.gov/) </li> 
+  <li> Data.gov: [https://catalog.data.gov/dataset/lidar-point-cloud-usgs-national-map](https://catalog.data.gov/dataset/lidar-point-cloud-usgs-national-map) </li>
+  <li> USGS.gov: [https://www.usgs.gov/faqs/what-lidar-data-and-where-can-i-download-it?qt-news_science_products=0#qt-news_science_products](https://www.usgs.gov/faqs/what-lidar-data-and-where-can-i-download-it?qt-news_science_products=0#qt-news_science_products) </li>
   </ul>
   </p>
   
