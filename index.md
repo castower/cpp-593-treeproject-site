@@ -71,7 +71,7 @@ sidebar:
   and contours.
   </blockquote>
 
-  <p markdown= "1"> You can read more on the NOAA website here: [https://oceanservice.noaa.gov/facts/lidar.html](https://oceanservice.noaa.gov/facts/lidar.html) </p>
+  <p markdown= "1"> You can read more on the NOAA website [here](https://oceanservice.noaa.gov/facts/lidar.html). </p>
   
   <p> In addition, the following U.S. government websites provide access to free, publicly available LiDAR data sets: </p>
   
