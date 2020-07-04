@@ -77,9 +77,9 @@ sidebar:
   
   <p>
   <ul>
-  <li> GeoPlatform.gov: https://www.geoplatform.gov/ </li> 
-  <li> Data.gov: https://catalog.data.gov/dataset/lidar-point-cloud-usgs-national-map </li>
-  <li> USGS.gov: https://www.usgs.gov/faqs/what-lidar-data-and-where-can-i-download-it?qt-news_science_products=0#qt-news_science_products </li>
+  <li> <a href="https://www.geoplatform.gov/">GeoPlatform.gov</a></li> 
+  <li> <a href="https://catalog.data.gov/dataset/lidar-point-cloud-usgs-national-map">Data.gov</a> </li>
+  <li> <a href="https://www.usgs.gov/faqs/what-lidar-data-and-where-can-i-download-it?qt-news_science_products=0#qt-news_science_products">USGS.gov</a> </li>
   </ul>
   </p>
   
