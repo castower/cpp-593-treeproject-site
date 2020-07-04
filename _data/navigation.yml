@@ -20,9 +20,9 @@ nav:
       - title: "Introduction"
         url: /#Introduction
       - title: "Remote Tree Census"
-        url: /#top
+        url: /#Remote_Tree_Census
       - title: "LiDAR"
-        url: /#Introduction
+        url: /#LIDAR
       - title: "R/RStudio"
         url: /#Packages
       - title: "Code-Through"
