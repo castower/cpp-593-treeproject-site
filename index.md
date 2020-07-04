@@ -45,7 +45,7 @@ sidebar:
   <p markdown= "1"> Although the field of remote tree identification is relatively new (the first R package for LiDAR data analysis was developed in [2014](https://www.researchgate.net/publication/324437694_LiDAR_Analysis_in_R_and_rLiDAR_for_Forestry_Applications)), the number of open-source tools available has expanded quickly. In this tutorial, we will be examining the tools available to conduct tree censuses with LiDAR data in R/RStudio. </p>
 
 <center>
-  <h2 id = "LIDAR">LiDAR</h1>
+  <h2 id = "LIDAR">LiDAR</h2>
 </center>
 
   <h3 markdown= "1"> **What is LiDAR data?** </h3>
