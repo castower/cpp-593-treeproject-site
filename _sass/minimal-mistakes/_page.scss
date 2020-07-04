@@ -129,13 +129,14 @@ body {
      text-decoration: none;
 	  
     &:hover {
-      text-decoration: underline;
+   /*   text-decoration: underline; */
 
       img {
         box-shadow: 0 0 10px rgba(#000, 0.25);
       }
     }
   }
+}	
 
   dt {
     margin-top: 1em;
