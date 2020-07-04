@@ -24,13 +24,21 @@ nav:
       - title: "LiDAR"
         url: /#LIDAR
       - title: "R/RStudio"
-        url: /#Packages
+        url: /#R_RStudio
       - title: "Code-Through"
-        url: /#Packages
+        url: /#Code
+      - title: "Set-Up"
+        url: /#SetUp
       - title: "Packages"
         url: /#Packages
-      - title: "Map"
-        url: /#Packages
+      - title: "Data"
+        url: /#Data
+      - title: "Tree Identification"
+        url: /#Identification
+      - title: "Mapping Trees"
+        url: /#Mapping
+      - title: "Discussion"
+        url: /#Discussion
       - title: "References"
         url: /#References
       - title: "Author"
