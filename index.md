@@ -188,7 +188,7 @@ sidebar:
 
 - Taylor, A. F., Wiley, A., Kuo, F. E., & Sullivan, W. C. (1998). Growing up in the inner city: Green spaces as places to grow. <i>Environment and Behavior, 30</i>(1), 3–27. [https://doi.org/10.1177/0013916598301001](https://doi.org/10.1177/0013916598301001)
 
-- The R Foundation. (2016). The R logo. Retrieved July 4, 2020 from https://www.r-project.org/logo/
+- The R Foundation. (2016). The R logo. Retrieved July 4, 2020 from [https://www.r-project.org/logo/](https://www.r-project.org/logo/)
 
 - Tigges, J., & Lakes, T. (2017). High resolution remote sensing for reducing uncertainties in urban forest carbon offset life cycle assessments. <i>Carbon Balance and Management, 12</i>(1), 1–18. [https://doi.org/10.1186/s13021-017-0085-x](https://doi.org/10.1186/s13021-017-0085-x)
 
