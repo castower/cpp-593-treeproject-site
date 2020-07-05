@@ -117,7 +117,7 @@ sidebar:
   
 <center>  
 
-  <img src="data/website/tree-project_files/RStudio-Logo-Flat.png" height="150">
+  <img src="data/website/tree-project_files/RStudio-Logo-Flat.png" width="300" height="150">
 
 </center>
 
