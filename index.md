@@ -223,6 +223,143 @@ library( "ggmap" )    # Used for mapping and spatial data processing
 
 <br>
 
+<h2 id= "Data">Data</h2>
+  
+  <p> Now that we have RStudio set up and our needed packages installed, we need to load our LiDAR data set.</p>
+  
+  <p markdown="1"> For this tutorial we will be using a set of LiDAR point clouds from Phoenix, Arizona that was collected by the USGS. We retrieved this data set from the Arizona State University Library's [Map and Geospatial Hub](https://lib.asu.edu/geo). A filtered version of the file is available in the Github repository for this site [here](https://github.com/castower/cpp-593-treeproject-site). </p>
+
+  <p markdown="1"> **Note:** LiDAR data sets can be relatively large. Ensure that you have the storage and processing capacity to run the required analysis. For this tutorial, the [ASU Research Computing Facilities](https://cores.research.asu.edu/research-computing/about-rc) were used to configure an RStudio session that uses **R version 3.6.2** and **6 CPU Cores**. In addition, a sufficient amount of RAM is needed. A minimum of 4GB RAM and less CPU cores may be used, but you will need to allot time for delayed processing. [Click here](https://info.vercator.com/blog/how-to-overcome-large-datasets-in-point-cloud-processing) and [here](https://www.fs.fed.us/pnw/pubs/pnw_gtr768.pdf) for articles that provides suggestions for appropriate computer configurations. </p>
+  
+<br>  
+  
+ <h3 markdown="1">**Data Download**</h3>
+ 
+ <p> First, you need to ensure that you have your data downloaded and stored in a clearly labeled file for easy reference during your coding process. </p>
+ 
+ <p> Depending on where your data is stored, the code needed for download may vary. The data set used for this tutorial was stored in Dropbox and the following code was used: </p>
+ 
+ ``` r
+# Download LAS LiDAR data
+
+# 2333 tile
+download.file("dropbox_link_here", 
+              "./data/lidar/las-points/lidar_2333_usgs_2014.las")
+
+
+
+# 2433 tile
+download.file("dropbox_link_here", 
+              "./data/lidar/las-points/lidar_2433_usgs_2014.las")
+```
+
+ <p markdown="1"> Dropbox is an excellent tool for hosting larger data sets. You can find tips on importing data from Dropbox into R [here](https://github.com/lecy/Import-Data-Into-R/blob/master/import%20from%20dropbox.md). </p>
+ 
+ <p markdown="1"> **Note:** Some operating systems and/or wifi speeds may have trouble with downloading the entire LAS files from Dropbox. Double check that file sizes match the original source. </p> 
+ 
+<br>
+  
+ <h3 markdown="1">**Data Exploration**</h3>
+  
+ <p> To load the data we will use the following code: </p>
+ 
+ ``` r
+LASfile <-  here( "data/lidar/las-points/lidar_2333_usgs_2014.las" )
+las <- lidR::readLAS(LASfile)
+
+LASfile2 <- here( "data/lidar/las-points/lidar_2433_usgs_2014.las")
+las2 <- lidR::readLAS(LASfile2)
+```
+
+<p markdown="1"> The `here()` function stores the LiDAR data into the `LASfile` variable. This variable is then used with the `lidR` package function `readLAS` to properly import the LiDAR point cloud data. </p>
+
+<p> Next, we can use base R functions to explore the LiDAR data sets further. For the purposes of the tutorial, we will summarize our first data set: </p>
+
+``` r
+summary( las )  # 11.25 million points over 1.03 km^2
+```
+
+    ## class        : LAS (v1.2 format 1)
+    ## memory       : 858.3 Mb 
+    ## extent       : 397990, 399010, 3704990, 3706010 (xmin, xmax, ymin, ymax)
+    ## coord. ref.  : +proj=utm +zone=12 +datum=NAD83 +units=m +no_defs +ellps=GRS80 +towgs84=0,0,0 
+    ## area         : 1.04 km²
+    ## points       : 11.25 million points
+    ## density      : 10.81 points/m²
+    ## File signature:           LASF 
+    ## File source ID:           0 
+    ## Global encoding:
+    ##  - GPS Time Type: Standard GPS Time 
+    ##  - Synthetic Return Numbers: no 
+    ##  - Well Know Text: CRS is GeoTIFF 
+    ##  - Aggregate Model: false 
+    ## Project ID - GUID:        00000000-0000-0000-0000-000000000000 
+    ## Version:                  1.2
+    ## System identifier:         
+    ## Generating software:      TerraScan 
+    ## File creation d/y:        290/2014
+    ## header size:              227 
+    ## Offset to point data:     513 
+    ## Num. var. length record:  3 
+    ## Point data format:        1 
+    ## Point data record length: 28 
+    ## Num. of point records:    11250194 
+    ## Num. of points by return: 10933801 303379 12794 220 0 
+    ## Scale factor X Y Z:       0.001 0.001 1e-05 
+    ## Offset X Y Z:             397990 3704990 329.04 
+    ## min X Y Z:                397990 3704990 329.04 
+    ## max X Y Z:                399010 3706010 363.8 
+    ## Variable length records: 
+    ##    Variable length record 1 of 3 
+    ##        Description: GeoTiff GeoKeyDirectoryTag 
+    ##        Tags:
+    ##           Key 1024 value 1 
+    ##           Key 1025 value 1 
+    ##           Key 1026 value 0 
+    ##           Key 2049 value 21 
+    ##           Key 2054 value 9102 
+    ##           Key 2062 value 0 
+    ##           Key 3072 value 26912 
+    ##           Key 3076 value 9001 
+    ##    Variable length record 2 of 3 
+    ##        Description: GeoTiff GeoDoubleParamsTag 
+    ##        data:                 0 0 0 
+    ##    Variable length record 3 of 3 
+    ##        Description: GeoTiff GeoAsciiParamsTag 
+    ##        data:                 NAD83 / UTM zone 12N|NAD83|
+
+
+<p> The summary output indicates the size of each pixel in the LAS file and indicates that there are 11.25 million points spread over 1.03 km^2 </p>
+
+``` r
+# 1,000 meter by 1,000 meter area
+sqrt( 11250000 ) # 11,250,000 points
+```
+
+    ## [1] 3354.102
+
+``` r
+# 3,354 pixels per side 
+```
+
+<p> The square root function further breaks down the analysis to indicate that in a 1,000 meter by 1,000 meter area there are 3,354 pixels per side. </p>
+
+``` r
+# pixel to area
+# 1,000 meters / 3,354 pixels 
+1000/3354
+```
+
+    ## [1] 0.2981515
+
+``` r
+# 0.30 meters per pixel ~ one foot per pixel 
+```
+
+<p> We can then break these pixels down across the area to find that there are approximately .30 meters per pixel covered in the data set. In the United States Customary System (USCS) of measurements, this is equivalent to about 1 foot per pixel. </p>
+
+<br>
+
 <hr>
 
 <center>
@@ -310,3 +447,6 @@ library( "ggmap" )    # Used for mapping and spatial data processing
   
 ---
 
+<p> <i> Last updated: July 07, 2020 </i> </p>
+
+<br>
