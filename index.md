@@ -221,7 +221,6 @@ library( "ggmap" )    # Used for mapping and spatial data processing
 
 <p markdown="1"> Although there are a wide variety of packages available for processing geospatial and LiDAR data in R, these selected packages are user-friendly and capable of analyzing the data in its raw form. Some other packages such as `ForestTools` require some pre-processing of the data. We will be working with a raw data set in this tutorial and coding all height models directly in R. </p>
 
-<br>
 
 <h2 id= "Data">Data</h2>
   
@@ -231,7 +230,6 @@ library( "ggmap" )    # Used for mapping and spatial data processing
 
   <p markdown="1"> **Note:** LiDAR data sets can be relatively large. Ensure that you have the storage and processing capacity to run the required analysis. For this tutorial, the [ASU Research Computing Facilities](https://cores.research.asu.edu/research-computing/about-rc) were used to configure an RStudio session that uses **R version 3.6.2** and **6 CPU Cores**. In addition, a sufficient amount of RAM is needed. A minimum of 4GB RAM and less CPU cores may be used, but you will need to allot time for delayed processing. [Click here](https://info.vercator.com/blog/how-to-overcome-large-datasets-in-point-cloud-processing) and [here](https://www.fs.fed.us/pnw/pubs/pnw_gtr768.pdf) for articles that provides suggestions for appropriate computer configurations. </p>
   
-<br>  
   
  <h3 markdown="1">**Data Download**</h3>
  
@@ -256,8 +254,7 @@ download.file("dropbox_link_here",
  <p markdown="1"> Dropbox is an excellent tool for hosting larger data sets. You can find tips on importing data from Dropbox into R [here](https://github.com/lecy/Import-Data-Into-R/blob/master/import%20from%20dropbox.md). </p>
  
  <p markdown="1"> **Note:** Some operating systems and/or wifi speeds may have trouble with downloading the entire LAS files from Dropbox. Double check that file sizes match the original source. </p> 
- 
-<br>
+
   
  <h3 markdown="1">**Data Exploration**</h3>
   
@@ -358,8 +355,6 @@ sqrt( 11250000 ) # 11,250,000 points
 
 <p> We can then break these pixels down across the area to find that there are approximately .30 meters per pixel covered in the data set. In the United States Customary System (USCS) of measurements, this is equivalent to about 1 foot per pixel. </p>
 
-<br>
-
 <hr>
 
 <center>
@@ -448,5 +443,3 @@ sqrt( 11250000 ) # 11,250,000 points
 ---
 
 <p> <i> Last updated: July 07, 2020 </i> </p>
-
-<br>
