@@ -179,14 +179,14 @@ sidebar:
 ``` r
 # Install Packages
 
-install.packages("rgdal")
-install.packages("raster")
-install.packages("here")
-install.packages("lidR")
-install.packages("rLiDAR")
-install.packages("rgl")
-install.packages("sp")
-install.packages("ggmap")
+install.packages( "rgdal" )
+install.packages( "raster" )
+install.packages( "here" )
+install.packages( "lidR" )
+install.packages( "rLiDAR" )
+install.packages( "rgl" )
+install.packages( "sp" )
+install.packages( "ggmap" )
 ```
 
 <br>
