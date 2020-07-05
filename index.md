@@ -184,7 +184,6 @@ install.packages( "raster" )
 install.packages( "here" )
 install.packages( "lidR" )
 install.packages( "rLiDAR" )
-install.packages( "rgl" )
 install.packages( "sp" )
 install.packages( "ggmap" )
 ```
@@ -211,14 +210,18 @@ install.packages( "ggmap" )
  
  ``` r
 # Library
-library( "rgdal" )    # Used for LiDAR file processing 
-library( "raster" )   # Used for raster tile processing
+library( "rgdal" )    # Used for raster and spatial file processing 
+library( "raster" )   # Used for raster file processing
 library( "here" )     # Used to create relative file paths so that code is reproducible
 library( "lidR" )     # Used for LiDAR file processing
 library( "rLiDAR" )   # Used for LiDAR file processing
 library( "sp" )       # Used for mapping and spatial data processing
 library( "ggmap" )    # Used for mapping and spatial data processing
 ```
+
+<br>
+
+<p> Although there are a wide variety of packages available for processing geospatial and LiDAR data, these specific packages are user-friendly and capable of analyzing the data in its raw form. Some other packages such as `ForestTools` require some pre-processing of the data. We will be working with a raw data set in this tutorial. </p>
 
 <br>
 
