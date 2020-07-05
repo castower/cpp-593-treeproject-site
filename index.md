@@ -142,19 +142,19 @@ sidebar:
   <p> Once you have R and RStudio installed, open RStudio and create a new file of your choice. You may find it easiest to create an RMarkdown file as displayed below: </p>
   
   <center>
-  ![](data/website/tree-project_files/screenshot-01.png)
+  <img src="data/website/tree-project_files/screenshot-01.png">
   </center>
   
   <p> If you select the RMarkdown option, you will get the following dialog box: </p>
   
   <center>
-  ![](data/website/tree-project_files/screenshot-02.png)
+  <img src="data/website/tree-project_files/screenshot-02.png">
   </center>
   
   <p> Select the option of your choice for document type. You can change this selection later using any of the multitude of RMarkdown output formats detailed [here](https://rmarkdown.rstudio.com/formats.html). This document was created using the Github document option: </p>
   
   <center>
-  ![](data/website/tree-project_files/screenshot-03.png) 
+ <img src="data/website/tree-project_files/screenshot-03.png">
  </center>
   
   
@@ -167,7 +167,7 @@ sidebar:
   <p> Once RStudio is set up, copy and paste the following code into the Console to install the packages that we will need for the tree census: </p>
   
 <center>  
-  ![](data/website/tree-project_files/screenshot-04.png)
+  <img src="data/website/tree-project_files/screenshot-04.png">
 </center>  
 
 ``` r
@@ -186,13 +186,13 @@ install.packages("ggmap")
 <p markdown="1"> Another option is to use the insert button to create an R Code chunk that you will copy and paste the code into and run once. After the packages are installed, add `eval=FALSE` to the top of the code chunk. </p>
 
 <center>  
-  ![](data/website/tree-project_files/screenshot-05.png)
+  <img src="data/website/tree-project_files/screenshot-05.png">
 </center> 
 
 <br>
 
 <center>
-![](data/website/tree-project_files/screenshot-06.png)
+<img src="data/website/tree-project_files/screenshot-06.png">
 </center>
 
 <br>
