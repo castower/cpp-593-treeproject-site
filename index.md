@@ -273,7 +273,7 @@ las2 <- lidR::readLAS(LASfile2)
 <p> Next, we can use base R functions to explore the LiDAR data sets further. For the purposes of the tutorial, we will summarize our first data set: </p>
 
 ``` r
-summary( las )  # 11.25 million points over 1.03 km^2
+summary( las )  # 11.25 million points over 1.04 km^2
 ```
 
     ## class        : LAS (v1.2 format 1)
@@ -326,7 +326,7 @@ summary( las )  # 11.25 million points over 1.03 km^2
     ##        data:                 NAD83 / UTM zone 12N|NAD83|
 
 
-<p> The summary output indicates the size of each pixel in the LAS file and indicates that there are 11.25 million points spread over 1.03 km^2 </p>
+<p> The summary output indicates the size of each pixel in the LAS file and indicates that there are 11.25 million points spread over 1.04 km^2 </p>
 
 ``` r
 # 1,000 meter by 1,000 meter area
