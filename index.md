@@ -130,28 +130,89 @@ sidebar:
   
 <br>
 
-
-<center> 
-  <h1 id = "Packages"> Packages </h1>
+<center>  
+  <h1 id= "Code">Code-Through</h1>
 </center>
-  <p> testing 123 </p>
 
-<hr>
+  <p> The following steps will guide you through the process of setting up RStudio and conducting the tree census. </p> 
 
-<center> 
-  <h1> Tree Census </h1> 
-</center>
-  <p> test </p>
+<br>
+
+  <h2 id="SetUp">Set-Up</h2>
+  <p> Once you have R and RStudio installed, open RStudio and create a new file of your choice. You may find it easiest to create an RMarkdown file as displayed below: </p>
   
-<center> 
-  <h2> R </h2> 
-</center>
-  <p> some text </p>
+  <center>
+  ![](data/website/tree-project_files/screenshot-01.png)
+  </center>
+  
+  <p> If you select the RMarkdown option, you will get the following dialog box: </p>
+  
+  <center>
+  ![](data/website/tree-project_files/screenshot-02.png)
+  </center>
+  
+  <p> Select the option of your choice for document type. You can change this selection later using any of the multitude of RMarkdown output formats detailed [here](https://rmarkdown.rstudio.com/formats.html). This document was created using the Github document option: </p>
+  
+  <center>
+  ![](data/website/tree-project_files/screenshot-03.png) 
+ </center>
+  
+  
+<br>
+
+  <h2 id= "Packages">Packages</h2>
+  
+  <h3 markdown="1">**Installation**</h3>
+  
+  <p> Once RStudio is set up, copy and paste the following code into the Console to install the packages that we will need for the tree census: </p>
   
 <center>  
-  <h2> Code-Through </h2>
+  ![](data/website/tree-project_files/screenshot-04.png)
+</center>  
+
+``` r
+# Install Packages
+
+install.packages("rgdal")
+install.packages("raster")
+install.packages("here")
+install.packages("lidR")
+install.packages("rLiDAR")
+install.packages("rgl")
+install.packages("sp")
+install.packages("ggmap")
+```
+
+<p markdown="1"> Another option is to use the insert button to create an R Code chunk that you will copy and paste the code into and run once. After the packages are installed, add `eval=FALSE` to the top of the code chunk. </p>
+
+<center>  
+  ![](data/website/tree-project_files/screenshot-05.png)
+</center> 
+
+<br>
+
+<center>
+![](data/website/tree-project_files/screenshot-06.png)
 </center>
-  <p> some more text </p>
+
+<br>
+
+ <h3 markdown="1">**Library**</h3>
+ 
+ <p markdown="1"> Once the packages are installed, add them to a code chunk in your RMarkdown file using the `library()` function: </p>
+ 
+ ``` r
+# Library
+library( "rgdal" )    # Used for LiDAR file processing 
+library( "raster" )   # Used for raster tile processing
+library( "here" )     # Used to create relative file paths so that code is reproducible
+library( "lidR" )     # Used for LiDAR file processing
+library( "rLiDAR" )   # Used for LiDAR file processing
+library( "sp" )       # Used for mapping and spatial data processing
+library( "ggmap" )    # Used for mapping and spatial data processing
+```
+
+<br>
 
 <hr>
 
