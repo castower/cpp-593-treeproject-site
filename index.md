@@ -24,10 +24,6 @@ sidebar:
   text-decoration: none;
 }
 
-.highlighter-rogue {
-  background: #736250;
-}
-
 </style>
 
 <center> 
