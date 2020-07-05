@@ -101,14 +101,12 @@ sidebar:
   <h3 markdown= "1">**What is R?**</h3>
   
 <center>  
-
   <img src="data/website/tree-project_files/Rlogo.png" width="150" height="150">
-
 </center>
 
 <br>
   
-  <p> **R** is an open-source programming environment that was developed for statistical and graphical analysis. The functionality of the environment is easily extended through the installation of software packages that can perform a wide variety of analyses. </p>
+  <p markdown="1"> **R** is an open-source programming environment that was developed for statistical and graphical analysis. The functionality of the environment is easily extended through the installation of software packages that can perform a wide variety of analyses. </p>
   
   <p markdown= "1"> You can read more about R and download the software from the Comprehensive R Archive Network **(CRAN)** for installation on a Linux, Mac OS X, or Windows device by clicking [here](https://www.r-project.org/about.html). </p>
   
