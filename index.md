@@ -113,6 +113,23 @@ sidebar:
   
 <br>
 
+  <h3 markdown= "1"> **What is RStudio?** </h3>
+  
+<center>  
+
+  <img src="data/website/tree-project_files/RStudio-Logo-Flat.png" height="150">
+
+</center>
+
+<br>
+  
+  <p markdown= "1"> **RStudio Desktop** is an open-source software that provides a graphical user interface to run R code and create a variety of document types (such as .html, markdown, .pdf, .docx) that include R code and output. </p>
+  
+  <p markdown = "1"> You can learn more about the software and install it on your device by clicking [here](https://rstudio.com/index2/). </p>
+  
+  
+<br>
+
 
 <center> 
   <h1 id = "Packages"> Packages </h1>
@@ -177,6 +194,8 @@ sidebar:
 - National Oceanic and Atmospheric Administration (NOAA) (2020, July 1). What is lidar?. <i>National Ocean Service website.</i> Retrieved July 3, 2020, from [https://oceanservice.noaa.gov/facts/lidar.html](https://oceanservice.noaa.gov/facts/lidar.html)
    
 - Poon, L. (2018, December 28). Every tree in the city, mapped. Retrieved May 25, 2020, from [https://www.citylab.com/environment/2018/12/urban-tree-canopy-maps-artificial-intelligence-descartes-labs/578701/](https://www.citylab.com/environment/2018/12/urban-tree-canopy-maps-artificial-intelligence-descartes-labs/578701/)
+
+- RStudio. (n.d.). RStudio Logo. Retrieved July 4, 2020, from [https://rstudio.com/about/logos/](https://rstudio.com/about/logos/)
 
 - Reid, C., Clougherty, J., Shmool, J., & Kubzansky, L. (2017). Is all urban green space the same? A comparison of the health benefits of trees and grass in New York City. <i>International Journal of Environmental Research and Public Health, 14</i>(11), 1411. [doi:10.3390/ijerph14111411](https://www.mdpi.com/1660-4601/14/11/1411)
 
