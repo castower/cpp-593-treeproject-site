@@ -221,7 +221,7 @@ library( "ggmap" )    # Used for mapping and spatial data processing
 
 <br>
 
-<p markdown="1"> Although there are a wide variety of packages available for processing geospatial and LiDAR data, these specific packages are user-friendly and capable of analyzing the data in its raw form. Some other packages such as `ForestTools` require some pre-processing of the data. We will be working with a raw data set in this tutorial. </p>
+<p markdown="1"> Although there are a wide variety of packages available for processing geospatial and LiDAR data in R, these selected packages are user-friendly and capable of analyzing the data in its raw form. Some other packages such as `ForestTools` require some pre-processing of the data. We will be working with a raw data set in this tutorial and coding all height models directly in R. </p>
 
 <br>
 
