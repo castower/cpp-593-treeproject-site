@@ -17,11 +17,17 @@ sidebar:
 {% include feature_row id="intro" type="center" %}
 
 <style type="text/css">
+  
 #masthead a:link {
   color: #fff;
   background-color: transparent;
   text-decoration: none;
 }
+
+.highlighter-rogue {
+  background: #736250;
+}
+
 </style>
 
 <center> 
