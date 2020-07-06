@@ -19,14 +19,14 @@ nav:
     children:
       - title: "Introduction"
         url: /#Introduction
-      - title: "Remote Tree Census"
-        url: /#Remote_Tree_Census
+      - title: "Tools"
+        url: /#Tools
       - title: "LiDAR"
         url: /#LIDAR
       - title: "R/RStudio"
         url: /#R_RStudio
-      - title: "Code-Through"
-        url: /#Code
+      - title: "Remote Tree Census"
+        url: /#Remote_Tree_Census
       - title: "Set-Up"
         url: /#SetUp
       - title: "Packages"
