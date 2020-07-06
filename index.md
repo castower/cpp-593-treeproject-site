@@ -179,8 +179,6 @@ sidebar:
 ``` r
 # Install Packages
 
-install.packages( "rgdal" )
-install.packages( "raster" )
 install.packages( "here" )
 install.packages( "lidR" )
 install.packages( "rLiDAR" )
@@ -210,8 +208,7 @@ install.packages( "ggmap" )
  
  ``` r
 # Library
-library( "rgdal" )    # Used for raster and spatial file processing 
-library( "raster" )   # Used for raster file processing
+
 library( "here" )     # Used to create relative file paths so that code is reproducible
 library( "lidR" )     # Used for LiDAR file processing
 library( "rLiDAR" )   # Used for LiDAR file processing
