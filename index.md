@@ -49,7 +49,7 @@ sidebar:
 <br>
 
 <center> 
-  <h1 id = "Remote_Tree_Census">Remote Tree Census Tools</h1>
+  <h1 id = "Tools">Remote Tree Census Tools</h1>
 </center>
 
   <p markdown= "1"> Although the field of remote tree identification is relatively new (the first R package for LiDAR data analysis was developed in [2014](https://www.researchgate.net/publication/324437694_LiDAR_Analysis_in_R_and_rLiDAR_for_Forestry_Applications)), the number of open-source tools available has expanded quickly. In this tutorial, we will be examining the tools available to conduct tree censuses with LiDAR data in R/RStudio. </p>
@@ -133,7 +133,7 @@ sidebar:
 <br>
 
 <center>  
-  <h1 id= "Code">Code-Through</h1>
+  <h1 id= "Remote_Tree_Census">Remote Tree Census Code-Through</h1>
 </center>
 
   <p> The following steps will guide you through the process of setting up RStudio and conducting the tree census. </p> 
