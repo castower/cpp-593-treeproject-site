@@ -241,14 +241,14 @@ library( "ggmap" )    # Used for mapping and spatial data processing
 # Download LAS LiDAR data
 
 # 2333 tile
-download.file("dropbox_link_here", 
-              "./data/lidar/las-points/lidar_2333_usgs_2014.las")
+download.file( "dropbox_link_here", 
+              "./data/lidar/las-points/lidar_2333_usgs_2014.las" )
 
 
 
 # 2433 tile
-download.file("dropbox_link_here", 
-              "./data/lidar/las-points/lidar_2433_usgs_2014.las")
+download.file( "dropbox_link_here", 
+              "./data/lidar/las-points/lidar_2433_usgs_2014.las" )
 ```
 
  <p markdown="1"> Dropbox is an excellent tool for hosting larger data sets. You can find tips on importing data from Dropbox into R [here](https://github.com/lecy/Import-Data-Into-R/blob/master/import%20from%20dropbox.md). </p>
@@ -262,10 +262,10 @@ download.file("dropbox_link_here",
  
  ``` r
 LASfile <-  here( "data/lidar/las-points/lidar_2333_usgs_2014.las" )
-las <- lidR::readLAS(LASfile)
+las <- lidR::readLAS( LASfile )
 
-LASfile2 <- here( "data/lidar/las-points/lidar_2433_usgs_2014.las")
-las2 <- lidR::readLAS(LASfile2)
+LASfile2 <- here( "data/lidar/las-points/lidar_2433_usgs_2014.las" )
+las2 <- lidR::readLAS( LASfile2 )
 ```
 
 <p markdown="1"> The `here()` function stores the LiDAR data into the `LASfile` variable. This variable is then used with the `lidR` package function `readLAS` to properly import the LiDAR point cloud data. </p>
