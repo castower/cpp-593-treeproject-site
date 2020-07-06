@@ -184,6 +184,7 @@ install.packages( "lidR" )
 install.packages( "rLiDAR" )
 install.packages( "sp" )
 install.packages( "ggmap" )
+install.packages( "measurements" )
 ```
 
 <br>
@@ -209,14 +210,29 @@ install.packages( "ggmap" )
  ``` r
 # Library
 
-library( "here" )     # Used to create relative file paths so that code is reproducible
-library( "lidR" )     # Used for LiDAR file processing
-library( "rLiDAR" )   # Used for LiDAR file processing
-library( "sp" )       # Used for mapping and spatial data processing
-library( "ggmap" )    # Used for mapping and spatial data processing
+library( "here" )         # Used to create relative file paths so that code is reproducible
+library( "lidR" )         # Used for LiDAR file processing
+library( "rLiDAR" )       # Used for LiDAR file processing
+library( "sp" )           # Used for mapping and spatial data processing
+library( "ggmap" )        # Used for mapping and spatial data processing
+library( "measurements" ) # Used to convert measurement units
 ```
 
 <p markdown="1"> Although there are a wide variety of packages available for processing geospatial and LiDAR data in R, these selected packages are user-friendly and capable of analyzing the data in its raw form. Some other packages such as `ForestTools` require some pre-processing of the data. We will be working with a raw data set in this tutorial and coding all height models directly in R. </p>
+
+<p markdown="1"> The documentation and reference manuals for the packages are available on **CRAN**: </p>
+
+- [here](https://cran.r-project.org/web/packages/here/index.html)
+
+- [lidR](https://cran.r-project.org/web/packages/lidR/index.html)
+
+- [rLiDAR](https://cran.r-project.org/web/packages/rLiDAR/index.html)
+
+- [sp](https://cran.r-project.org/web/packages/sp/index.html)
+
+- [ggmap](https://cran.r-project.org/web/packages/ggmap/index.html)
+
+- [measurements](https://cran.r-project.org/web/packages/measurements/index.html)
 
 
 <h2 id= "Data">Data</h2>
