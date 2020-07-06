@@ -358,6 +358,8 @@ sqrt( 11250000 ) # 11,250,000 points
   <h1 id = "References">References</h1>
 </center>
 
+- ASU Research Computing. (n.d.). Retrieved July 5, 2020, from [https://cores.research.asu.edu/research-computing/about](https://cores.research.asu.edu/research-computing/about)
+
 - Benefits of trees. (2019). <i>Nature Climate Change, 9</i>(8), 569–569. [doi:10.1038/s41558-019-0556-z](https://www.nature.com/articles/s41558-019-0556-z)
     
 - Butt, N., Slade, E., Thompson, J., Malhi, Y., & Riutta, T. (2013). Quantifying the sampling error in tree census measurements by volunteers and its effect on carbon stock estimates. <i> Ecological Applications, 23</i>(4), 936–943. [doi:10.1890/11-2059.1](https://esajournals.onlinelibrary.wiley.com/doi/abs/10.1890/11-2059.1)
