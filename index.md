@@ -353,7 +353,7 @@ sqrt( 11250000 ) # 11,250,000 points
 # 0.30 meters per pixel ~ one foot per pixel 
 ```
 
-<p> We can then divide the area by the pixels to find that there are approximately .30 meters per pixel in the data set. In the United States Customary System (USCS) of measurements, this is equivalent to around 1 foot per pixel. </p>
+<p> We can then divide the area by the pixels to find that there are approximately .30 meters per pixel in the data set. In the United States Customary System (USCS) of measurements, this is equivalent to approx. 1 foot per pixel. </p>
 
 <hr>
 
