@@ -182,6 +182,7 @@ sidebar:
 install.packages( "here" )
 install.packages( "lidR" )
 install.packages( "rLiDAR" )
+install.pacakges( "raster" )
 install.packages( "sp" )
 install.packages( "ggmap" )
 install.packages( "measurements" )
@@ -213,6 +214,7 @@ install.packages( "measurements" )
 library( "here" )         # Used to create relative file paths so that code is reproducible
 library( "lidR" )         # Used for LiDAR file processing
 library( "rLiDAR" )       # Used for LiDAR file processing
+library( "raster" )       # Used for raster file processing
 library( "sp" )           # Used for mapping and spatial data processing
 library( "ggmap" )        # Used for mapping and spatial data processing
 library( "measurements" ) # Used to convert measurement units
@@ -222,12 +224,13 @@ library( "measurements" ) # Used to convert measurement units
 
 <p markdown="1"> The documentation and reference manuals for the packages are available on **CRAN**: </p>
 
-- [here](https://cran.r-project.org/web/packages/here/index.html)
-- [lidR](https://cran.r-project.org/web/packages/lidR/index.html)
-- [rLiDAR](https://cran.r-project.org/web/packages/rLiDAR/index.html)
-- [sp](https://cran.r-project.org/web/packages/sp/index.html)
-- [ggmap](https://cran.r-project.org/web/packages/ggmap/index.html)
-- [measurements](https://cran.r-project.org/web/packages/measurements/index.html)
+- [here](https://CRAN.R-project.org/package=here)
+- [lidR](https://CRAN.R-project.org/package=lidR)
+- [rLiDAR](https://CRAN.R-project.org/package=rLiDAR)
+- [raster](https://CRAN.R-project.org/package=raster)
+- [sp](https://CRAN.R-project.org/package=sp)
+- [ggmap](https://CRAN.R-project.org/package=ggmap)
+- [measurements](https://CRAN.R-project.org/package=measurements)
 
 
 <h2 id= "Data">Data</h2>
