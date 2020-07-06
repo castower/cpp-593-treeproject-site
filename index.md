@@ -358,6 +358,8 @@ sqrt( 11250000 ) # 11,250,000 points
   <h1 id = "References">References</h1>
 </center>
 
+- Arizona State University Map and Geospatial Hub. (n.d.). New web map for accessing Phoenix LiDAR data. Retrieved July 5, 2020, from [https://lib.asu.edu/Geo/news/New-Web-Map-Accessing-Phoenix-LiDAR-Data](https://lib.asu.edu/Geo/news/New-Web-Map-Accessing-Phoenix-LiDAR-Data) 
+
 - ASU Research Computing. (n.d.). Retrieved July 5, 2020, from [https://cores.research.asu.edu/research-computing/about](https://cores.research.asu.edu/research-computing/about)
 
 - Benefits of trees. (2019). <i>Nature Climate Change, 9</i>(8), 569–569. [doi:10.1038/s41558-019-0556-z](https://www.nature.com/articles/s41558-019-0556-z)
@@ -417,6 +419,8 @@ sqrt( 11250000 ) # 11,250,000 points
 - Thomson, C. (2020). How to overcome large datasets in point cloud processing. <i>Vercator</i>. Retrieved July 5, 2020, from [https://info.vercator.com/blog/how-to-overcome-large-datasets-in-point-cloud-processing](https://info.vercator.com/blog/how-to-overcome-large-datasets-in-point-cloud-processing)
 
 - Tigges, J., & Lakes, T. (2017). High resolution remote sensing for reducing uncertainties in urban forest carbon offset life cycle assessments. <i>Carbon Balance and Management, 12</i>(1), 1–18. [https://doi.org/10.1186/s13021-017-0085-x](https://doi.org/10.1186/s13021-017-0085-x)
+
+- Toro, M. (2017). Robust USGS LiDAR data for Metro Phoenix now available. Retrieved June 29, 2020 from [https://lib.asu.edu/geo/news/trees](https://lib.asu.edu/geo/news/trees)
 
 - TreesCount! (2017). Retrieved May 31, 2020, from [http://media.nycgovparks.org/images/web/TreesCount/Index.html](http://media.nycgovparks.org/images/web/TreesCount/Index.html)
 
