@@ -384,6 +384,8 @@ sqrt( 11250000 ) # 11,250,000 points
       
  - King, D. K., Litt, J., Hale, J., Burniece, K. M., & Ross, C. (2015). “The park a tree built”: Evaluating how a park development project impacted where people play. <i>Urban Forestry & Urban Greening, 14</i>(2), 293–299. [doi:10.1016/j.ufug.2015.02.011](https://www.sciencedirect.com/science/article/abs/pii/S1618866715000291?via%3Dihub) 
       
+ - Lecy, J. (2016, April 2). Load data files from Dropbox. Retrieved July 5, 2020, from [https://github.com/lecy/Import-Data-Into-R/blob/master/import%20from%20dropbox.md](https://github.com/lecy/Import-Data-Into-R/blob/master/import%20from%20dropbox.md)
+ 
  - Li, X., Chen, W. Y., Sanesi, G., & Lafortezza, R. (2019). Remote sensing in urban forestry: Recent applications and future directions. <i>Remote Sensing, 11</i>(10) [doi:10.3390/rs11101144](https://www.mdpi.com/2072-4292/11/10/1144)
       
  - Lin, Y., Jiang, M., Yao, Y., Zhang, L., & Lin, J. (2015). Use of UAV oblique imaging for the detection of individual trees in residential environments. <i>Urban Forestry & Urban Greening, 14</i>(2), 404–412. [doi:10.1016/j.ufug.2015.03.003](https://www.sciencedirect.com/science/article/abs/pii/S1618866715000333?via%3Dihub)
