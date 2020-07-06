@@ -223,15 +223,10 @@ library( "measurements" ) # Used to convert measurement units
 <p markdown="1"> The documentation and reference manuals for the packages are available on **CRAN**: </p>
 
 - [here](https://cran.r-project.org/web/packages/here/index.html)
-
 - [lidR](https://cran.r-project.org/web/packages/lidR/index.html)
-
 - [rLiDAR](https://cran.r-project.org/web/packages/rLiDAR/index.html)
-
 - [sp](https://cran.r-project.org/web/packages/sp/index.html)
-
 - [ggmap](https://cran.r-project.org/web/packages/ggmap/index.html)
-
 - [measurements](https://cran.r-project.org/web/packages/measurements/index.html)
 
 
