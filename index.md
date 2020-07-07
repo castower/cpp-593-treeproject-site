@@ -1563,7 +1563,7 @@ head ( read.csv( here("data/csv/trees_2333.csv"), col.names = c("id", "x", "y", 
 
 register_google(key = "[your API key]") # for temporary use of key
 
-register_google(key = "[your API key]", write = TRUE) # for registering key in .Renviron file
+register_google(key = "[your API key]", write = TRUE) # for permanently registering key in .Renviron file
 
 ```
 
