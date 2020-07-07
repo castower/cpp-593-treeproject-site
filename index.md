@@ -2024,7 +2024,7 @@ googleplot
 
 <br>
 
-<p> A comparison of the layers allows us to see the overlap and discrepancies between manual remote tree identification and the automated algorithm. The green trees were marked manually and the red circles were identified by the coded algorithm: </p>
+<p> A compilation of the layers allows us to see the overlap and discrepancies between manual remote tree identification and the automated algorithm. The green trees were marked manually and the red circles were identified by the coded algorithm: </p>
 
 <center>
 
@@ -2043,6 +2043,8 @@ googleplot
 <iframe src="https://www.google.com/maps/d/u/1/embed?mid=1TRSyvnKPzoMj13cSeT6JYMihP_dMPWhJ" width="640" height="480"> </iframe>
 
 </center>
+
+<br>
 
 <p> To view the automated and manual plot layers, click the button to the left of the **Tree Census** title: </p>
 
