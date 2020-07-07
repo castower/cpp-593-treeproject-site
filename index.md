@@ -1617,13 +1617,19 @@ lat.lon$height <- trees$height
       
 - Gatziolis, D. & Andersen, H. (2008). A guide to LIDAR data acquisition and processing for the forests of the Pacific Northwest. <i>United States Department of Agriculture Forest Service</i>. Retrieved July 5, 2020, from [https://www.fs.fed.us/pnw/pubs/pnw_gtr768.pdf](https://www.fs.fed.us/pnw/pubs/pnw_gtr768.pdf)
 
+- Google. (n.d.). Google Cloud Maps Platform. Retrieved July 7, 2020, from [https://cloud.google.com/maps-platform/](https://cloud.google.com/maps-platform/)
+
+- Google. (n.d.). Google MyMaps Creator. Retrieved July 7, 2020, from [https://www.google.com/maps/about/mymaps/](https://www.google.com/maps/about/mymaps/)
+
 - Hijmans, R. J. et al. (2020, June 27). raster: Geographic Data Analysis and Modeling. Retrieved July 6, 2020, from [https://CRAN.R-project.org/package=raster ](https://CRAN.R-project.org/package=raster)
 
 - Johnson, M., Gonzalez, A., Kozak, B., & Sperlak, L. (2013). Carbon estimation and offsets for U.S. university aviation programs. <i>Collegiate Aviation Review, 31</i>(1), 40–56. [https://doi.org/10.22488/okstate.18.100437](https://doi.org/10.22488/okstate.18.100437) 
       
 - Kabisch, N., van den Bosch, M., & Lafortezza, R. (2017). The health benefits of nature-based solutions to urbanization challenges for children and the elderly – A systematic review. <i>Environmental Research, 159</i>, 362–373. [doi:10.1016/j.envres.2017.08.004](https://www.sciencedirect.com/science/article/abs/pii/S0013935117315396?via%3Dihub)
       
- - Kahle, D. et al. (2019, February 5). ggmap: Spatial Visualization with ggplot2. Retrieved July 6, 2020 from [https://CRAN.R-project.org/package=ggmap](https://CRAN.R-project.org/package=ggmap)
+ - Kahle, D. (2019, May 11). ggmap Github Repository. Retrieved July 7, 2020, from [https://github.com/dkahle/ggmap](https://github.com/dkahle/ggmap)
+ 
+ - Kahle, D. et al. (2019, February 5). ggmap: Spatial Visualization with ggplot2. Retrieved July 6, 2020, from [https://CRAN.R-project.org/package=ggmap](https://CRAN.R-project.org/package=ggmap)
  
  - King, D. K., Litt, J., Hale, J., Burniece, K. M., & Ross, C. (2015). “The park a tree built”: Evaluating how a park development project impacted where people play. <i>Urban Forestry & Urban Greening, 14</i>(2), 293–299. [doi:10.1016/j.ufug.2015.02.011](https://www.sciencedirect.com/science/article/abs/pii/S1618866715000291?via%3Dihub) 
       
@@ -1678,6 +1684,8 @@ lat.lon$height <- trees$height
 - USGS. (2014). NGA LiDAR project - Phoenix, AZ. Retrieved July 4, 2020, from ASU Library Map and Geospatial Hub [https://lib.asu.edu/geo](https://lib.asu.edu/geo)
 
 - Ulmer, J. M., Wolf, K. L., Backman, D. R., Tretheway, R. L., Blain, C. J., O’Neil-Dunne, J. P., & Frank, L. D. (2016). Multiple health benefits of urban tree canopy: The mounting evidence for a green prescription. <i>Health & Place, 42</i>, 54–62. [doi:10.1016/j.healthplace.2016.08.011](https://linkinghub.elsevier.com/retrieve/pii/S1353829216301332)
+
+- University of Chicago Computing for the Social Sciences. (2020, February 18). Drawing raster maps with ggmap. Retrieved July 7, 2020, from [https://cfss.uchicago.edu/notes/raster-maps-with-ggmap/#obtain-map-images](https://cfss.uchicago.edu/notes/raster-maps-with-ggmap/#obtain-map-images)
 
 - Wasser, L. (2020). Create a canopy height model with LiDAR data. Retrieved June 29, 2020 from [https://www.earthdatascience.org/courses/earth-analytics/lidar-raster-data-r/lidar-chm-dem-dsm/](https://www.earthdatascience.org/courses/earth-analytics/lidar-raster-data-r/lidar-chm-dem-dsm/)
 
