@@ -2066,8 +2066,6 @@ googleplot
 
 <hr>
 
-<br>
-
 <center>
 
 <h1 id="Discussion"> Discussion </h1>
@@ -2202,9 +2200,7 @@ googleplot
 
 ---
 
-<center>
   <h1 id = "Author">Author</h1>
-</center>
  
  <p> Courtney Stowers is a graduate student completing an M.S. in Program Evaluation and Data Analytics at the Watts College of Public Service and Community Solutions, Arizona State University. Her undergraduate degrees in Family and Human Development and Applied Quantitative Science and work experience as a teaching assistant in college-level family science, research methods, and social statistics courses lend to a special interest in social policy for families and children. She hopes to pursue a career that will allow her to use data science to effect change in the lives of communities throughout the United States and across the globe. </p>
 
