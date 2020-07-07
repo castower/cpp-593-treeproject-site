@@ -1623,23 +1623,25 @@ lat.lon$height <- trees$height
 
 - Hijmans, R. J. et al. (2020, June 27). raster: Geographic Data Analysis and Modeling. Retrieved July 6, 2020, from [https://CRAN.R-project.org/package=raster ](https://CRAN.R-project.org/package=raster)
 
+- Jean-Romain. (2020, February 13). Rasterizing perfect canopy height models. Retrieved July 7, 2020, from [https://github.com/Jean-Romain/lidR/wiki/Rasterizing-perfect-canopy-height-models](https://github.com/Jean-Romain/lidR/wiki/Rasterizing-perfect-canopy-height-models)
+
 - Johnson, M., Gonzalez, A., Kozak, B., & Sperlak, L. (2013). Carbon estimation and offsets for U.S. university aviation programs. <i>Collegiate Aviation Review, 31</i>(1), 40–56. [https://doi.org/10.22488/okstate.18.100437](https://doi.org/10.22488/okstate.18.100437) 
       
 - Kabisch, N., van den Bosch, M., & Lafortezza, R. (2017). The health benefits of nature-based solutions to urbanization challenges for children and the elderly – A systematic review. <i>Environmental Research, 159</i>, 362–373. [doi:10.1016/j.envres.2017.08.004](https://www.sciencedirect.com/science/article/abs/pii/S0013935117315396?via%3Dihub)
       
- - Kahle, D. (2019, May 11). ggmap Github Repository. Retrieved July 7, 2020, from [https://github.com/dkahle/ggmap](https://github.com/dkahle/ggmap)
+- Kahle, D. (2019, May 11). ggmap Github Repository. Retrieved July 7, 2020, from [https://github.com/dkahle/ggmap](https://github.com/dkahle/ggmap)
  
- - Kahle, D. et al. (2019, February 5). ggmap: Spatial Visualization with ggplot2. Retrieved July 6, 2020, from [https://CRAN.R-project.org/package=ggmap](https://CRAN.R-project.org/package=ggmap)
+- Kahle, D. et al. (2019, February 5). ggmap: Spatial Visualization with ggplot2. Retrieved July 6, 2020, from [https://CRAN.R-project.org/package=ggmap](https://CRAN.R-project.org/package=ggmap)
  
- - King, D. K., Litt, J., Hale, J., Burniece, K. M., & Ross, C. (2015). “The park a tree built”: Evaluating how a park development project impacted where people play. <i>Urban Forestry & Urban Greening, 14</i>(2), 293–299. [doi:10.1016/j.ufug.2015.02.011](https://www.sciencedirect.com/science/article/abs/pii/S1618866715000291?via%3Dihub) 
+- King, D. K., Litt, J., Hale, J., Burniece, K. M., & Ross, C. (2015). “The park a tree built”: Evaluating how a park development project impacted where people play. <i>Urban Forestry & Urban Greening, 14</i>(2), 293–299. [doi:10.1016/j.ufug.2015.02.011](https://www.sciencedirect.com/science/article/abs/pii/S1618866715000291?via%3Dihub) 
       
- - Lecy, J. (2016, April 2). Load data files from Dropbox. Retrieved July 5, 2020, from [https://github.com/lecy/Import-Data-Into-R/blob/master/import%20from%20dropbox.md](https://github.com/lecy/Import-Data-Into-R/blob/master/import%20from%20dropbox.md)
+- Lecy, J. (2016, April 2). Load data files from Dropbox. Retrieved July 5, 2020, from [https://github.com/lecy/Import-Data-Into-R/blob/master/import%20from%20dropbox.md](https://github.com/lecy/Import-Data-Into-R/blob/master/import%20from%20dropbox.md)
  
- - Li, X., Chen, W. Y., Sanesi, G., & Lafortezza, R. (2019). Remote sensing in urban forestry: Recent applications and future directions. <i>Remote Sensing, 11</i>(10) [doi:10.3390/rs11101144](https://www.mdpi.com/2072-4292/11/10/1144)
+- Li, X., Chen, W. Y., Sanesi, G., & Lafortezza, R. (2019). Remote sensing in urban forestry: Recent applications and future directions. <i>Remote Sensing, 11</i>(10) [doi:10.3390/rs11101144](https://www.mdpi.com/2072-4292/11/10/1144)
       
- - Lin, Y., Jiang, M., Yao, Y., Zhang, L., & Lin, J. (2015). Use of UAV oblique imaging for the detection of individual trees in residential environments. <i>Urban Forestry & Urban Greening, 14</i>(2), 404–412. [doi:10.1016/j.ufug.2015.03.003](https://www.sciencedirect.com/science/article/abs/pii/S1618866715000333?via%3Dihub)
+- Lin, Y., Jiang, M., Yao, Y., Zhang, L., & Lin, J. (2015). Use of UAV oblique imaging for the detection of individual trees in residential environments. <i>Urban Forestry & Urban Greening, 14</i>(2), 404–412. [doi:10.1016/j.ufug.2015.03.003](https://www.sciencedirect.com/science/article/abs/pii/S1618866715000333?via%3Dihub)
       
- - Malmsheimer, R. W., Bowyer, J. L., Fried, J. S., Gee, E., Izlar, R., Miner, R. A., Munn, I. A., Oneil, E., & Stewart, W. C. (2011). Managing forests because carbon matters: Integrating energy, products, and land management policy. <i>Journal of Forestry, 109</i>(7), S7-S50. Retrieved May 31, 2020, from [https://www.fs.usda.gov/treesearch/pubs/40291](https://www.fs.usda.gov/treesearch/pubs/40291)
+- Malmsheimer, R. W., Bowyer, J. L., Fried, J. S., Gee, E., Izlar, R., Miner, R. A., Munn, I. A., Oneil, E., & Stewart, W. C. (2011). Managing forests because carbon matters: Integrating energy, products, and land management policy. <i>Journal of Forestry, 109</i>(7), S7-S50. Retrieved May 31, 2020, from [https://www.fs.usda.gov/treesearch/pubs/40291](https://www.fs.usda.gov/treesearch/pubs/40291)
 
 - McPherson, E., & Simpson, J. (1999). Carbon dioxide reduction through urban forestry: guidelines for professional and volunteer tree planters. Albany, Calif: U.S. Dept. of Agriculture, Forest Service, Pacific Southwest Research Station. Retrieved May 31, 2020, from [https://permanent.access.gpo.gov/lps94433/psw-gtr171.pdf](https://permanent.access.gpo.gov/lps94433/psw-gtr171.pdf)
 
@@ -1651,13 +1653,13 @@ lat.lon$height <- trees$height
 
 - Poon, L. (2018, December 28). Every tree in the city, mapped. Retrieved May 25, 2020, from [https://www.citylab.com/environment/2018/12/urban-tree-canopy-maps-artificial-intelligence-descartes-labs/578701/](https://www.citylab.com/environment/2018/12/urban-tree-canopy-maps-artificial-intelligence-descartes-labs/578701/)
 
-- Roussel, J. et al. (2020, July 5). lidR: Airborne LiDAR Data Manipulation and Visualization for Forestry Applications. Retrieved July 6, 2020, from [https://CRAN.R-project.org/package=lidR](https://CRAN.R-project.org/package=lidR)
-
 - Reid, C., Clougherty, J., Shmool, J., & Kubzansky, L. (2017). Is all urban green space the same? A comparison of the health benefits of trees and grass in New York City. <i>International Journal of Environmental Research and Public Health, 14</i>(11), 1411. [doi:10.3390/ijerph14111411](https://www.mdpi.com/1660-4601/14/11/1411)
 
 - Ren, Z., Zheng, H., He, X., Zhang, D., Yu, X., & Shen, G. (2015). Spatial estimation of urban forest structures with Landsat TM data and field measurements. <i>Urban Forestry & Urban Greening, 14</i>(2), 336–344. [doi:10.1016/j.ufug.2015.03.008](https://www.sciencedirect.com/science/article/abs/pii/S1618866715000400?via%3Dihub)
 
 - RStudio. (n.d.). RStudio Logo. Retrieved July 4, 2020, from [https://rstudio.com/about/logos/](https://rstudio.com/about/logos/)
+
+- Roussel, J. et al. (2020, July 5). lidR: Airborne LiDAR Data Manipulation and Visualization for Forestry Applications. Retrieved July 6, 2020, from [https://CRAN.R-project.org/package=lidR](https://CRAN.R-project.org/package=lidR)
 
 - Russo, A., Escobedo, F. J., Timilsina, N., & Zerbe, S. (2015). Transportation carbon dioxide emission offsets by public urban trees: A case study in Bolzano, Italy. <i>Urban Forestry & Urban Greening, 14</i>(2), 398–403. [doi:10.1016/j.ufug.2015.04.002](https://linkinghub.elsevier.com/retrieve/pii/S1618866715000424)
 
