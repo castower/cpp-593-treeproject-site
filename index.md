@@ -422,7 +422,7 @@ sqrt( 11250000 ) # 11,250,000 points
 
 - National Oceanic and Atmospheric Administration (NOAA) (2020, July 1). What is lidar?. <i>National Ocean Service website.</i> Retrieved July 3, 2020, from [https://oceanservice.noaa.gov/facts/lidar.html](https://oceanservice.noaa.gov/facts/lidar.html)
    
-- Pebesma, E. (2020, May 20). sp: Classes and Methods for Spatial Data. Retrieved July 6, 2020 from [https://CRAN.R-project.org/package=sp](https://CRAN.R-project.org/package=sp)
+- Pebesma, E. et al. (2020, May 20). sp: Classes and Methods for Spatial Data. Retrieved July 6, 2020 from [https://CRAN.R-project.org/package=sp](https://CRAN.R-project.org/package=sp)
 
 - Poon, L. (2018, December 28). Every tree in the city, mapped. Retrieved May 25, 2020, from [https://www.citylab.com/environment/2018/12/urban-tree-canopy-maps-artificial-intelligence-descartes-labs/578701/](https://www.citylab.com/environment/2018/12/urban-tree-canopy-maps-artificial-intelligence-descartes-labs/578701/)
 
