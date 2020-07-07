@@ -1564,7 +1564,7 @@ plot( raster.2333, col = col )
 
 <img src="data/website/tree-project_files/figure-gfm/unnamed-chunk-23-1.png">
 
-<center>
+</center>
 
 <h2 id= "Mapping">Mapping Trees</h2>
 
