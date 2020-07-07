@@ -2,6 +2,8 @@
 
 ```
 
+# install.packages( raster )
+
 library( raster )
 
 # Colorize pixels
