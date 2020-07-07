@@ -1643,6 +1643,7 @@ googleplot <- qmplot( x, y, data = lat.lon, geom = "blank", zoom=18,
         geom_point( shape=1, color="red", alpha=0.7, aes( size=height, max=5 ) )
 googleplot
 ```
+
 <center>
   
 <img src="data/website/tree-project_files/figure-gfm/unnamed-chunk-27-1.png">
