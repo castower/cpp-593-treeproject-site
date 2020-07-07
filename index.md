@@ -366,6 +366,308 @@ sqrt( 11250000 ) # 11,250,000 points
 
 <p> We can then divide the area by the pixels to find that there are approximately .30 meters per pixel in the data set. In the United States Customary System (USCS) of measurements, this is equivalent to approx. 1 foot per pixel. </p>
 
+<h2 id="Identification">Tree Identification</h2>
+
+<p> In order to conduct a tree census, we must first identify individual trees. To accomplish this, we need to normalize the heights of the LAS files, colorize the pixels, and create a Canopy Height Model. </p>
+
+<p markdown="1"> The [Canopy Height Model (CHM)](https://www.earthdatascience.org/courses/earth-analytics/lidar-raster-data-r/lidar-chm-dem-dsm/) finds the distance of objects from the ground and will serve as a measurement tool for analysis. </p>
+
+``` r
+# Tree identification for 2433 tile
+
+las2  <- normalize_height( las2, tin() )               # Normalize heights
+col  <- height.colors( 50 )                            # Colorize pixels
+chm2  <- lidR::grid_canopy( las2, res = 1, p2r() )     # Create Canopy Height Model
+```
+
+``` r
+# Plot Canopy Height Model
+
+plot( chm2, col = col )
+```
+
+<center>
+
+![](data/website/tree-project_files/figure-gfm/unnamed-chunk-6-1.png)<!-- -->
+
+</center>
+
+
+<p> This plot displays the heights of the various items in the LiDAR data tile. Flat areas with a height of 0 meters are displayed in dark blue while tall areas with a height up to 30 meters are displayed in red. </p>
+
+<p markdown="1"> The `lidR` package's `grid_canopy()` function provides several [graphing options](https://github.com/Jean-Romain/lidR/wiki/Rasterizing-perfect-canopy-height-models) that can change the appearance of the plot: </p>
+
+
+``` r
+chm2  <- lidR::grid_canopy( las2, res = 0.5, p2r() ) # alter the resolution to 0.5
+plot( chm2, col = col )
+```
+
+<center>
+
+![](data/website/tree-project_files/figure-gfm/unnamed-chunk-7-1.png)<!-- -->
+
+</center>
+
+<p> This reduction in the resolution worsens the plot </p>
+
+
+``` r
+chm2  <- lidR::grid_canopy( las2, res = 0.5, p2r(0.2) ) # adjust the points-to-raster algorithm's circle size
+plot( chm2, col = col )
+```
+
+<center>
+
+![](data/website/tree-project_files/figure-gfm/unnamed-chunk-8-1.png)<!-- -->
+
+</center>
+
+<p> Adjusting the points-to-raster algorithm's circle size slightly improves the graph, but keeps some holes in the plot. </p>
+
+``` r
+chm2  <- lidR::grid_canopy( las2, res = 2, p2r() ) # alter the resolution to 2
+plot( chm2, col = col )
+```
+
+<center>
+
+![](data/website/tree-project_files/figure-gfm/unnamed-chunk-9-1.png)<!-- -->
+
+</center>
+
+<p> This improves the resolution of the plot, but some holes still remain. </p>
+
+``` r
+chm2  <- lidR::grid_canopy( las2, res = 2, p2r(0.5) ) # alter the resolution and points-to-raster configurations
+plot( chm2, col = col )
+```
+
+<center>
+
+![](data/website/tree-project_files/figure-gfm/unnamed-chunk-10-1.png)<!-- -->
+
+</center>
+
+<p markdown="1"> This slightly increases the plot, but there are still some unclear plots. Therefore, we will try the package's `pitfree()` function: </p>
+
+<p markdown="1"> **Note:** This function is more computationally demanding than the p2r and triangulation based methods that are available in the package's documentation. </p>
+
+``` r
+chm2  <- lidR::grid_canopy(las2, 0.25, pitfree(c(0,2,5,10,15), c(0,1), subcircle = 0.2))
+```
+
+``` r
+# Pitfree plot
+
+plot( chm2, col = col )
+```
+
+<center>
+
+![](data/website/tree-project_files/figure-gfm/unnamed-chunk-12-1.png)<!-- -->
+
+</center>
+
+<p> This plot contains very few white spaces and provides a clear colorized analysis of the heights present in the tile. </p>
+
+``` r
+# Find heights of objects in tile that are at least 1.37 meters tall
+
+trees2 <- FindTreesCHM( chm2 ) # function from rLiDAR package
+head( trees2 )
+```
+
+    ##          x       y   height
+    ## 1 398400.6 3705009 3.565190
+    ## 2 398401.9 3705009 3.421995
+    ## 3 398523.9 3705009 2.164520
+    ## 4 398578.6 3705009 7.366430
+    ## 5 398705.1 3705009 4.276970
+    ## 6 398713.9 3705009 4.272560
+
+
+<p> After we find the heights of objects in meters, we can also find the measures in feet: </p>
+
+``` r
+# Create measures in feet and meters 
+
+colnames( trees2 ) <- c( "x", "y", "height_meter" ) # rename column to designate meters
+
+head( trees2 ) # preview data set with new column titles
+```
+
+    ##          x       y height_meter
+    ## 1 398400.6 3705009     3.565190
+    ## 2 398401.9 3705009     3.421995
+    ## 3 398523.9 3705009     2.164520
+    ## 4 398578.6 3705009     7.366430
+    ## 5 398705.1 3705009     4.276970
+    ## 6 398713.9 3705009     4.272560
+
+``` r
+trees2$height_ft <- conv_unit( trees2$height_meter, "m", "ft"  ) # create column with tree heights in feet
+
+head( trees2 ) # view new data set with measures in feet
+```
+
+    ##          x       y height_meter height_ft
+    ## 1 398400.6 3705009     3.565190 11.696818
+    ## 2 398401.9 3705009     3.421995 11.227019
+    ## 3 398523.9 3705009     2.164520  7.101444
+    ## 4 398578.6 3705009     7.366430 24.168077
+    ## 5 398705.1 3705009     4.276970 14.032054
+    ## 6 398713.9 3705009     4.272560 14.017585
+
+
+<p> Now we will repeat these steps for our 2333 tile: </p> 
+
+``` r
+# Tree identification for 2333 tile
+
+# Normalize heights
+las  <- normalize_height( las, tin() )
+
+# Colorize pixels
+col  <- height.colors( 50 )
+
+# Create Canopy Height Model
+chm  <- lidR::grid_canopy( las, 0.25, pitfree(c(0,2,5,10,15), c(0,1), subcircle = 0.2) )
+```
+
+``` r
+# Plot 2333 tile
+
+plot(chm, col = col)
+```
+
+![](data/website/tree-project_files/figure-gfm/unnamed-chunk-16-1.png)<!-- -->
+
+``` r
+# Find trees
+
+trees <- FindTreesCHM( chm )
+
+head(trees)
+```
+
+    ##          x       y    height
+    ## 1 398074.1 3706009  7.155665
+    ## 2 398102.9 3706009  5.658660
+    ## 3 398103.1 3706009  5.658660
+    ## 4 398108.4 3706009  5.650502
+    ## 5 398126.6 3706009 11.269140
+    ## 6 398130.9 3706009  8.827670
+
+``` r
+# Create measures in feet and meters 
+
+colnames( trees ) <- c( "x", "y", "height_meter" ) # rename column to designate meters
+
+head( trees ) # preview data set with new column titles
+```
+
+    ##          x       y height_meter
+    ## 1 398074.1 3706009     7.155665
+    ## 2 398102.9 3706009     5.658660
+    ## 3 398103.1 3706009     5.658660
+    ## 4 398108.4 3706009     5.650502
+    ## 5 398126.6 3706009    11.269140
+    ## 6 398130.9 3706009     8.827670
+
+``` r
+trees$height_ft <- conv_unit( trees$height_meter, "m", "ft"  ) # create column with tree heights in feet
+
+head( trees ) # view data set with measures in feet
+```
+
+    ##          x       y height_meter height_ft
+    ## 1 398074.1 3706009     7.155665  23.47659
+    ## 2 398102.9 3706009     5.658660  18.56516
+    ## 3 398103.1 3706009     5.658660  18.56516
+    ## 4 398108.4 3706009     5.650502  18.53839
+    ## 5 398126.6 3706009    11.269140  36.97224
+    ## 6 398130.9 3706009     8.827670  28.96217
+
+
+<p> Once we have our data set created, we can then narrow the area of the plot to create a sample area to conduct our remote tree census: </p>
+
+``` r
+# Create fixed square window size of 5 for an area to conduct a sample tree census
+trees <- FindTreesCHM( chm, fws=5 )
+
+# Create measures in feet and meters 
+
+colnames( trees ) <- c( "x", "y", "height_meter" ) # rename column to designate meters
+
+head( trees ) # preview data set with new column titles
+```
+
+    ##          x       y height_meter
+    ## 1 398074.1 3706009     7.155665
+    ## 2 398102.9 3706009     5.658660
+    ## 3 398103.1 3706009     5.658660
+    ## 4 398108.4 3706009     5.650502
+    ## 5 398126.6 3706009    11.269140
+    ## 6 398130.9 3706009     8.827670
+
+``` r
+trees$height_ft <- conv_unit( trees$height_meter, "m", "ft"  ) # create column with tree heights in feet
+
+head( trees ) # view data set with measures in feet
+```
+
+    ##          x       y height_meter height_ft
+    ## 1 398074.1 3706009     7.155665  23.47659
+    ## 2 398102.9 3706009     5.658660  18.56516
+    ## 3 398103.1 3706009     5.658660  18.56516
+    ## 4 398108.4 3706009     5.650502  18.53839
+    ## 5 398126.6 3706009    11.269140  36.97224
+    ## 6 398130.9 3706009     8.827670  28.96217
+
+``` r
+summary( trees )
+```
+
+    ##        x                y            height_meter      height_ft     
+    ##  Min.   :397991   Min.   :3704991   Min.   : 1.495   Min.   : 4.905  
+    ##  1st Qu.:398277   1st Qu.:3705224   1st Qu.: 3.973   1st Qu.:13.033  
+    ##  Median :398527   Median :3705425   Median : 4.925   Median :16.157  
+    ##  Mean   :398527   Mean   :3705468   Mean   : 6.190   Mean   :20.307  
+    ##  3rd Qu.:398812   3rd Qu.:3705732   3rd Qu.: 7.770   3rd Qu.:25.493  
+    ##  Max.   :399009   Max.   :3706009   Max.   :27.568   Max.   :90.445
+
+
+<p> We can save the raster file of the plot and the CSV file of tree height data with the following functions: </p>
+
+``` r
+# Save tree heights to CSV file
+
+write.csv( trees, here("data/csv/trees_2333.csv") )
+
+# Save Canopy Height Model to raster file
+
+writeRaster( chm, here("data/lidar/raster/2333.tif") )
+```
+
+<p> To view the saved CSV file, we can run the following code: </p>
+
+``` r
+# Preview CSV file
+
+head ( read.csv( here("data/csv/trees_2333.csv"), col.names = c("id", "x", "y", "height_meter", "height_ft"), stringsAsFactors = FALSE ) )
+```
+
+    ##   id        x       y height_meter height_ft
+    ## 1  1 398074.1 3706009     7.155665  23.47659
+    ## 2  2 398102.9 3706009     5.658660  18.56516
+    ## 3  3 398103.1 3706009     5.658660  18.56516
+    ## 4  4 398108.4 3706009     5.650502  18.53839
+    ## 5  5 398126.6 3706009    11.269140  36.97224
+    ## 6  6 398130.9 3706009     8.827670  28.96217
+    
+
+
 <hr>
 
 <center>
