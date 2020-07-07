@@ -466,7 +466,7 @@ plot( chm2, col = col )
 
 <p markdown="1"> This slightly increases the plot, but there are still some unclear plots. Therefore, we will try the package's `pitfree()` function: </p>
 
-<p markdown="1"> **Note:** This function is more computationally demanding than the p2r and triangulation based methods that are available in the package's documentation. </p>
+<p markdown="1"> **Note:** **Note:** This function requires more computer power than the p2r and triangulation based methods that are available in the package’s documentation. </p>
 
 ``` r
 chm2  <- lidR::grid_canopy(las2, 0.25, pitfree(c(0,2,5,10,15), c(0,1), subcircle = 0.2))
@@ -1548,6 +1548,21 @@ head ( read.csv( here("data/csv/trees_2333.csv"), col.names = c("id", "x", "y", 
 </table>
 
 </center>
+
+<p> To view the saved raster file, we can run the following code: </p>
+
+```r
+
+# Preview Raster file
+
+raster.2333 <- raster( here("data/lidar/raster/2333.tif") )
+
+plot( raster.2333, col = col )
+```
+
+<img src="tree-project_files/figure-gfm/unnamed-chunk-23-1.png">
+
+<br>
 
 <h2 id= "Mapping">Mapping Trees</h2>
 
