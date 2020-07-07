@@ -378,6 +378,8 @@ sqrt( 11250000 ) # 11,250,000 points
 
 - Benefits of trees. (2019). <i>Nature Climate Change, 9</i>(8), 569–569. [doi:10.1038/s41558-019-0556-z](https://www.nature.com/articles/s41558-019-0556-z)
     
+- Birk, M. A. (2019, May 28). measurements: Tools for Units of Measurement. Retrieved July 6, 2020, from [https://CRAN.R-project.org/package=measurements](https://CRAN.R-project.org/package=measurements)
+
 - Butt, N., Slade, E., Thompson, J., Malhi, Y., & Riutta, T. (2013). Quantifying the sampling error in tree census measurements by volunteers and its effect on carbon stock estimates. <i> Ecological Applications, 23</i>(4), 936–943. [doi:10.1890/11-2059.1](https://esajournals.onlinelibrary.wiley.com/doi/abs/10.1890/11-2059.1)
     
 - Daams, M. N. & Veneri, P.  (2016). Living near to attractive nature? A well-being indicator for ranking Dutch, Danish, and German functional urban areas. <i> [Social Indicators Research](https://link.springer.com/article/10.1007/s11205-016-1375-5), 133</i>(2), 501–526.
@@ -396,10 +398,14 @@ sqrt( 11250000 ) # 11,250,000 points
       
 - Gatziolis, D. & Andersen, H. (2008). A guide to LIDAR data acquisition and processing for the forests of the Pacific Northwest. <i>United States Department of Agriculture Forest Service</i>. Retrieved July 5, 2020, from [https://www.fs.fed.us/pnw/pubs/pnw_gtr768.pdf](https://www.fs.fed.us/pnw/pubs/pnw_gtr768.pdf)
 
+- Hijmans, R. J. et al. (2020, June 27). raster: Geographic Data Analysis and Modeling. Retrieved July 6, 2020, from [https://CRAN.R-project.org/package=raster ](https://CRAN.R-project.org/package=raster)
+
 - Johnson, M., Gonzalez, A., Kozak, B., & Sperlak, L. (2013). Carbon estimation and offsets for U.S. university aviation programs. <i>Collegiate Aviation Review, 31</i>(1), 40–56. [https://doi.org/10.22488/okstate.18.100437](https://doi.org/10.22488/okstate.18.100437) 
       
 - Kabisch, N., van den Bosch, M., & Lafortezza, R. (2017). The health benefits of nature-based solutions to urbanization challenges for children and the elderly – A systematic review. <i>Environmental Research, 159</i>, 362–373. [doi:10.1016/j.envres.2017.08.004](https://www.sciencedirect.com/science/article/abs/pii/S0013935117315396?via%3Dihub)
       
+ - Kahle, D. et al. (2019, February 5). ggmap: Spatial Visualization with ggplot2. Retrieved July 6, 2020 from [https://CRAN.R-project.org/package=ggmap](https://CRAN.R-project.org/package=ggmap)
+ 
  - King, D. K., Litt, J., Hale, J., Burniece, K. M., & Ross, C. (2015). “The park a tree built”: Evaluating how a park development project impacted where people play. <i>Urban Forestry & Urban Greening, 14</i>(2), 293–299. [doi:10.1016/j.ufug.2015.02.011](https://www.sciencedirect.com/science/article/abs/pii/S1618866715000291?via%3Dihub) 
       
  - Lecy, J. (2016, April 2). Load data files from Dropbox. Retrieved July 5, 2020, from [https://github.com/lecy/Import-Data-Into-R/blob/master/import%20from%20dropbox.md](https://github.com/lecy/Import-Data-Into-R/blob/master/import%20from%20dropbox.md)
@@ -412,17 +418,25 @@ sqrt( 11250000 ) # 11,250,000 points
 
 - McPherson, E., & Simpson, J. (1999). Carbon dioxide reduction through urban forestry: guidelines for professional and volunteer tree planters. Albany, Calif: U.S. Dept. of Agriculture, Forest Service, Pacific Southwest Research Station. Retrieved May 31, 2020, from [https://permanent.access.gpo.gov/lps94433/psw-gtr171.pdf](https://permanent.access.gpo.gov/lps94433/psw-gtr171.pdf)
 
+- Muller, K. (2017, May 28). here: A Simpler Way to Find Your Files. Retrieved July 6, 2020, from [https://CRAN.R-project.org/package=here](https://CRAN.R-project.org/package=here
+
 - National Oceanic and Atmospheric Administration (NOAA) (2020, July 1). What is lidar?. <i>National Ocean Service website.</i> Retrieved July 3, 2020, from [https://oceanservice.noaa.gov/facts/lidar.html](https://oceanservice.noaa.gov/facts/lidar.html)
    
+- Pebesma, E. (2020, May 20). sp: Classes and Methods for Spatial Data. Retrieved July 6, 2020 from [https://CRAN.R-project.org/package=sp](https://CRAN.R-project.org/package=sp)
+
 - Poon, L. (2018, December 28). Every tree in the city, mapped. Retrieved May 25, 2020, from [https://www.citylab.com/environment/2018/12/urban-tree-canopy-maps-artificial-intelligence-descartes-labs/578701/](https://www.citylab.com/environment/2018/12/urban-tree-canopy-maps-artificial-intelligence-descartes-labs/578701/)
 
-- RStudio. (n.d.). RStudio Logo. Retrieved July 4, 2020, from [https://rstudio.com/about/logos/](https://rstudio.com/about/logos/)
+- Roussel, J. (2020, July 5). lidR: Airborne LiDAR Data Manipulation and Visualization for Forestry Applications. Retrieved July 6, 2020, from [https://CRAN.R-project.org/package=lidR](https://CRAN.R-project.org/package=lidR)
 
 - Reid, C., Clougherty, J., Shmool, J., & Kubzansky, L. (2017). Is all urban green space the same? A comparison of the health benefits of trees and grass in New York City. <i>International Journal of Environmental Research and Public Health, 14</i>(11), 1411. [doi:10.3390/ijerph14111411](https://www.mdpi.com/1660-4601/14/11/1411)
 
 - Ren, Z., Zheng, H., He, X., Zhang, D., Yu, X., & Shen, G. (2015). Spatial estimation of urban forest structures with Landsat TM data and field measurements. <i>Urban Forestry & Urban Greening, 14</i>(2), 336–344. [doi:10.1016/j.ufug.2015.03.008](https://www.sciencedirect.com/science/article/abs/pii/S1618866715000400?via%3Dihub)
 
+- RStudio. (n.d.). RStudio Logo. Retrieved July 4, 2020, from [https://rstudio.com/about/logos/](https://rstudio.com/about/logos/)
+
 - Russo, A., Escobedo, F. J., Timilsina, N., & Zerbe, S. (2015). Transportation carbon dioxide emission offsets by public urban trees: A case study in Bolzano, Italy. <i>Urban Forestry & Urban Greening, 14</i>(2), 398–403. [doi:10.1016/j.ufug.2015.04.002](https://linkinghub.elsevier.com/retrieve/pii/S1618866715000424)
+
+- Silva, C.A. et al. (2017, July 12). rLiDAR: LiDAR Data Processing and Visualization. Retrieved July 6, 2020, from [https://CRAN.R-project.org/package=rLiDAR](https://CRAN.R-project.org/package=rLiDAR)
 
 - Silva, C. A., Klauberg, C. M., Mohan, M. M., & Bright, B. C. (2018). LiDAR Analysis in R and rLiDAR for Forestry Applications. Retrieved from [https://www.researchgate.net/publication/324437694_LiDAR_Analysis_in_R_and_rLiDAR_for_Forestry_Applications](https://www.researchgate.net/publication/324437694_LiDAR_Analysis_in_R_and_rLiDAR_for_Forestry_Applications)
 
