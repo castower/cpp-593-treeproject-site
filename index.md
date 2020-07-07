@@ -1320,8 +1320,6 @@ summary( trees ) %>% kable() %>% kable_styling()
 
 <tr>
 
-<th style="text-align:left;"> </th>
-
 <th style="text-align:left;"> x </th>
 
 <th style="text-align:left;"> y </th>
@@ -1338,8 +1336,6 @@ summary( trees ) %>% kable() %>% kable_styling()
 
 <tr>
 
-<td style="text-align:left;"> </td>
-
 <td style="text-align:left;"> Min. :397991 </td>
 
 <td style="text-align:left;"> Min. :3704991 </td>
@@ -1351,8 +1347,6 @@ summary( trees ) %>% kable() %>% kable_styling()
 </tr>
 
 <tr>
-
-<td style="text-align:left;"> </td>
 
 <td style="text-align:left;"> 1st Qu.:398277 </td>
 
@@ -1366,8 +1360,6 @@ summary( trees ) %>% kable() %>% kable_styling()
 
 <tr>
 
-<td style="text-align:left;"> </td>
-
 <td style="text-align:left;"> Median :398527 </td>
 
 <td style="text-align:left;"> Median :3705425 </td>
@@ -1379,8 +1371,6 @@ summary( trees ) %>% kable() %>% kable_styling()
 </tr>
 
 <tr>
-
-<td style="text-align:left;"> </td>
 
 <td style="text-align:left;"> Mean :398527 </td>
 
@@ -1394,8 +1384,6 @@ summary( trees ) %>% kable() %>% kable_styling()
 
 <tr>
 
-<td style="text-align:left;"> </td>
-
 <td style="text-align:left;"> 3rd Qu.:398812 </td>
 
 <td style="text-align:left;"> 3rd Qu.:3705732 </td>
@@ -1407,8 +1395,6 @@ summary( trees ) %>% kable() %>% kable_styling()
 </tr>
 
 <tr>
-
-<td style="text-align:left;"> </td>
 
 <td style="text-align:left;"> Max. :399009 </td>
 
