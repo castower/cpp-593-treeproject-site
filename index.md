@@ -494,6 +494,7 @@ plot( chm2, col = col )
 trees2 <- FindTreesCHM( chm2 ) # function from rLiDAR package
 head( trees2 ) %>% kable() %>% kable_styling() # Create table of data
 ```
+<center>
 <table class="table" style="margin-left: auto; margin-right: auto;">
 
 <thead>
@@ -576,6 +577,7 @@ head( trees2 ) %>% kable() %>% kable_styling() # Create table of data
 
 </table>
 
+</center>
 
 
 <p> After we find the heights of objects in meters, we can also find the measures in feet: </p>
