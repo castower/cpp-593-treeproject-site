@@ -2046,7 +2046,7 @@ googleplot
 
 <br>
 
-<p> To view the automated and manual plot layers, click the button to the left of the **Tree Census** title: </p>
+<p markdown="1"> To view the automated and manual plot layers, click the button to the left of the **Tree Census** title: </p>
 
 <center>
 
@@ -2078,7 +2078,7 @@ googleplot
 
 <p> The automated tree census had some flaws, particularly in the area of misidentifying tall, narrow points on buildings as trees, overlooking palm trees due to their small circumference/crown shape, and miscounting overlapping trees in heavily canvassed areas. </p>
 
-<p> However, the algorithm did not seem to fall prey to serious systematic or measurement errors that could severely bias results—-it consistently undercounted trees and overcounted buildings on all the blocks in the sample area. </p>
+<p> However, the algorithm did not seem to fall prey to serious systematic or measurement errors that could severely bias results—it consistently undercounted trees and overcounted buildings on all the blocks in the sample area. </p>
 
 <p> Overall, the open-source tools for conducting remote-tree censuses are extremely advanced and relatively accurate. They provide a promising solution to provide a baseline estimate of the number of trees located in sparsely canvassed areas before organizations invest in costly traditional tree census methods. </p>
 
