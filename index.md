@@ -132,6 +132,8 @@ sidebar:
   
 <br>
 
+---
+
 <center>  
   <h1 id= "Remote_Tree_Census">Remote Tree Census Code-Through</h1>
 </center>
@@ -466,7 +468,7 @@ plot( chm2, col = col )
 
 <p markdown="1"> This slightly increases the plot, but there are still some unclear plots. Therefore, we will try the package's `pitfree()` function: </p>
 
-<p markdown="1"> **Note:** **Note:** This function requires more computer power than the p2r and triangulation based methods that are available in the package’s documentation. </p>
+<p markdown="1"> **Note:** This function requires more computer power than the p2r and triangulation based methods that are available in the package’s documentation. </p>
 
 ``` r
 chm2  <- lidR::grid_canopy(las2, 0.25, pitfree(c(0,2,5,10,15), c(0,1), subcircle = 0.2))
