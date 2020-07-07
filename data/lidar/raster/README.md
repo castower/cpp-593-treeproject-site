@@ -1,4 +1,4 @@
--.tif files of LiDAR canopy height models. To load in R use the following code:
+- .tif files of LiDAR canopy height models. To load in R use the following code:
 
 ```
 
