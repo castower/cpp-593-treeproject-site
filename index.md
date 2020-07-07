@@ -186,6 +186,8 @@ install.pacakges( "raster" )
 install.packages( "sp" )
 install.packages( "ggmap" )
 install.packages( "measurements" )
+install.packages( "kableExtra" )
+install.packages( "tidyverse" )
 ```
 
 <br>
@@ -218,6 +220,8 @@ library( "raster" )       # Used for raster file processing
 library( "sp" )           # Used for mapping and spatial data processing
 library( "ggmap" )        # Used for mapping and spatial data processing
 library( "measurements" ) # Used to convert measurement units
+library( "kableExtra" )   # Used to format tables
+library( "tidyverse" )    # Used for manipulating data and packages
 ```
 
 <p markdown="1"> Although there are a wide variety of packages available for processing geospatial and LiDAR data in R, these selected packages are user-friendly and capable of analyzing the data in its raw form. Some other packages such as `ForestTools` require some pre-processing of the data. We will be working with a raw data set in this tutorial and coding all height models directly in R. </p>
@@ -231,6 +235,8 @@ library( "measurements" ) # Used to convert measurement units
 - [sp](https://CRAN.R-project.org/package=sp)
 - [ggmap](https://CRAN.R-project.org/package=ggmap)
 - [measurements](https://CRAN.R-project.org/package=measurements)
+- [kableExtra](https://CRAN.R-project.org/package=kableExtra)
+- [tidyverse](https://CRAN.R-project.org/package=tidyverse)
 
 
 <h2 id= "Data">Data</h2>
@@ -779,9 +785,13 @@ head ( read.csv( here("data/csv/trees_2333.csv"), col.names = c("id", "x", "y", 
 
 - Wasser, L. (2020). Create a canopy height model with LiDAR data. Retrieved June 29, 2020 from [https://www.earthdatascience.org/courses/earth-analytics/lidar-raster-data-r/lidar-chm-dem-dsm/](https://www.earthdatascience.org/courses/earth-analytics/lidar-raster-data-r/lidar-chm-dem-dsm/)
 
+- Wickham, H. & RStudio (2019, November 21). tidyverse: Easily Install and Load the 'Tidyverse'. Retrieved July 6, 2020, from [https://CRAN.R-project.org/package=tidyverse](https://CRAN.R-project.org/package=tidyverse)
+
 - Zhao, M., Kong, Z.-H., Escobedo, F. J., & Gao, J. (2010). Impacts of urban forests on offsetting carbon emissions from industrial energy use in Hangzhou, China. <i>Journal of Environmental Management, 91</i>(4), 807–813. [doi:10.1016/j.jenvman.2009.10.010](https://www.sciencedirect.com/science/article/pii/S030147970900365X?via%3Dihub)
   
 - Zheng, D., Ducey, M., & Heath, L. (2013). Assessing net carbon sequestration on urban and community forests of northern New England, USA. <i>Urban Forestry & Urban Greening, 12</i>(1), 61–68. [https://doi.org/10.1016/j.ufug.2012.10.003](https://doi.org/10.1016/j.ufug.2012.10.003)
+
+- Zhu, H. et al. (2019, March 16). kableExtra: Construct Complex Table with 'kable' and Pipe Syntax. Retrieved July 6, 2020, from [https://CRAN.R-project.org/package=kableExtra](https://CRAN.R-project.org/package=kableExtra)
 
 <br>
 
