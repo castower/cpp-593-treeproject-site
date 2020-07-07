@@ -802,7 +802,7 @@ chm  <- lidR::grid_canopy( las, 0.25, pitfree(c(0,2,5,10,15), c(0,1), subcircle 
 ``` r
 # Plot 2333 tile
 
-plot(chm, col = col)
+plot( chm, col = col )
 ```
 
 <center>
@@ -1578,9 +1578,9 @@ plot( raster.2333, col = col )
 
 ```r
 
-register_google(key = "[your API key]") # for temporary use of key
+register_google( key = "[your API key]" ) # for temporary use of key
 
-register_google(key = "[your API key]", write = TRUE) # for permanently registering key in .Renviron file
+register_google( key = "[your API key]", write = TRUE ) # for permanently registering key in .Renviron file
 
 ```
 
@@ -1658,7 +1658,7 @@ googleplot
 lat.lon.csv <- lat.lon
 
 # label columns
-names( lat.lon.csv ) <- c("longitude","latitude","height")
+names( lat.lon.csv ) <- c( "longitude","latitude","height" )
 
 # order columns
 lat.lon.csv <- lat.lon.csv[,c("latitude","longitude","height")]
@@ -1753,11 +1753,11 @@ head( lat.lon.csv ) %>% kable() %>% kable_styling()
 
 </center>
 
-<p> We can also create an output of this data that can be copied and pasted for sample analysis of 25 trees: </p>
+<p> We can also create an output of this data that can be copied and pasted into a data set for sample analysis of 25 trees: </p>
 
 ``` r
-lat.lon.sample <- head(lat.lon.csv, 25)
-dput(lat.lon.sample)
+lat.lon.sample <- head( lat.lon.csv, 25 )
+dput( lat.lon.sample )
 ```
 
     ## structure(list(latitude = c(33.4887765925544, 33.4887200718144, 
@@ -1825,7 +1825,7 @@ dev.off()
 ``` r
 las3 <- filter_poi( las, Classification == LASHIGHVEGETATION )
 chm3 <- lidR::grid_canopy( las3, res = 1, p2r() )
-plot(chm3, col = col)
+plot( chm3, col = col )
 ```
 <center>
   
