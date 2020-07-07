@@ -819,13 +819,91 @@ trees <- FindTreesCHM( chm )
 head( trees ) %>% kable() %>% kable_styling()
 ```
 
-    ##          x       y    height
-    ## 1 398074.1 3706009  7.155665
-    ## 2 398102.9 3706009  5.658660
-    ## 3 398103.1 3706009  5.658660
-    ## 4 398108.4 3706009  5.650502
-    ## 5 398126.6 3706009 11.269140
-    ## 6 398130.9 3706009  8.827670
+<center>
+  
+<table class="table" style="margin-left: auto; margin-right: auto;">
+
+<thead>
+
+<tr>
+
+<th style="text-align:right;"> x </th>
+
+<th style="text-align:right;"> y </th>
+
+<th style="text-align:right;"> height </th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td style="text-align:right;"> 398074.1 </td>
+
+<td style="text-align:right;"> 3706009 </td>
+
+<td style="text-align:right;"> 7.155665 </td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:right;"> 398102.9 </td>
+
+<td style="text-align:right;"> 3706009 </td>
+
+<td style="text-align:right;"> 5.658660 </td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:right;"> 398103.1 </td>
+
+<td style="text-align:right;"> 3706009 </td>
+
+<td style="text-align:right;"> 5.658660 </td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:right;"> 398108.4 </td>
+
+<td style="text-align:right;"> 3706009 </td>
+
+<td style="text-align:right;"> 5.650502 </td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:right;"> 398126.6 </td>
+
+<td style="text-align:right;"> 3706009 </td>
+
+<td style="text-align:right;"> 11.269140 </td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:right;"> 398130.9 </td>
+
+<td style="text-align:right;"> 3706009 </td>
+
+<td style="text-align:right;"> 8.827670 </td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</center>
 
 ``` r
 # Create measures in feet and meters 
@@ -835,13 +913,91 @@ colnames( trees ) <- c( "x", "y", "height_meter" ) # rename column to designate 
 head( trees ) %>% kable() %>% kable_styling() # preview data set with new column titles
 ```
 
-    ##          x       y height_meter
-    ## 1 398074.1 3706009     7.155665
-    ## 2 398102.9 3706009     5.658660
-    ## 3 398103.1 3706009     5.658660
-    ## 4 398108.4 3706009     5.650502
-    ## 5 398126.6 3706009    11.269140
-    ## 6 398130.9 3706009     8.827670
+<center>
+
+<table class="table" style="margin-left: auto; margin-right: auto;">
+
+<thead>
+
+<tr>
+
+<th style="text-align:right;"> x </th>
+
+<th style="text-align:right;"> y </th>
+
+<th style="text-align:right;"> height_meter </th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td style="text-align:right;"> 398074.1 </td>
+
+<td style="text-align:right;"> 3706009 </td>
+
+<td style="text-align:right;"> 7.155665 </td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:right;"> 398102.9 </td>
+
+<td style="text-align:right;"> 3706009 </td>
+
+<td style="text-align:right;"> 5.658660 </td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:right;"> 398103.1 </td>
+
+<td style="text-align:right;"> 3706009 </td>
+
+<td style="text-align:right;"> 5.658660 </td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:right;"> 398108.4 </td>
+
+<td style="text-align:right;"> 3706009 </td>
+
+<td style="text-align:right;"> 5.650502 </td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:right;"> 398126.6 </td>
+
+<td style="text-align:right;"> 3706009 </td>
+
+<td style="text-align:right;"> 11.269140 </td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:right;"> 398130.9 </td>
+
+<td style="text-align:right;"> 3706009 </td>
+
+<td style="text-align:right;"> 8.827670 </td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</center>
 
 ``` r
 trees$height_ft <- conv_unit( trees$height_meter, "m", "ft"  ) # create column with tree heights in feet
@@ -849,13 +1005,104 @@ trees$height_ft <- conv_unit( trees$height_meter, "m", "ft"  ) # create column w
 head( trees ) %>% kable() %>% kable_styling() # view data set with measures in feet
 ```
 
-    ##          x       y height_meter height_ft
-    ## 1 398074.1 3706009     7.155665  23.47659
-    ## 2 398102.9 3706009     5.658660  18.56516
-    ## 3 398103.1 3706009     5.658660  18.56516
-    ## 4 398108.4 3706009     5.650502  18.53839
-    ## 5 398126.6 3706009    11.269140  36.97224
-    ## 6 398130.9 3706009     8.827670  28.96217
+<center>
+<table class="table" style="margin-left: auto; margin-right: auto;">
+
+<thead>
+
+<tr>
+
+<th style="text-align:right;"> x </th>
+
+<th style="text-align:right;"> y </th>
+
+<th style="text-align:right;"> height_meter </th>
+
+<th style="text-align:right;"> height_ft </th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td style="text-align:right;"> 398074.1 </td>
+
+<td style="text-align:right;"> 3706009 </td>
+
+<td style="text-align:right;"> 7.155665 </td>
+
+<td style="text-align:right;"> 23.47659 </td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:right;"> 398102.9 </td>
+
+<td style="text-align:right;"> 3706009 </td>
+
+<td style="text-align:right;"> 5.658660 </td>
+
+<td style="text-align:right;"> 18.56516 </td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:right;"> 398103.1 </td>
+
+<td style="text-align:right;"> 3706009 </td>
+
+<td style="text-align:right;"> 5.658660 </td>
+
+<td style="text-align:right;"> 18.56516 </td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:right;"> 398108.4 </td>
+
+<td style="text-align:right;"> 3706009 </td>
+
+<td style="text-align:right;"> 5.650502 </td>
+
+<td style="text-align:right;"> 18.53839 </td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:right;"> 398126.6 </td>
+
+<td style="text-align:right;"> 3706009 </td>
+
+<td style="text-align:right;"> 11.269140 </td>
+
+<td style="text-align:right;"> 36.97224 </td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:right;"> 398130.9 </td>
+
+<td style="text-align:right;"> 3706009 </td>
+
+<td style="text-align:right;"> 8.827670 </td>
+
+<td style="text-align:right;"> 28.96217 </td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</center>
 
 
 <p> Once we have our data set created, we can then narrow the area of the plot to create a sample area to conduct our remote tree census: </p>
@@ -871,39 +1118,313 @@ colnames( trees ) <- c( "x", "y", "height_meter" ) # rename column to designate 
 head( trees ) %>% kable() %>% kable_styling() # preview data set with new column titles
 ```
 
-    ##          x       y height_meter
-    ## 1 398074.1 3706009     7.155665
-    ## 2 398102.9 3706009     5.658660
-    ## 3 398103.1 3706009     5.658660
-    ## 4 398108.4 3706009     5.650502
-    ## 5 398126.6 3706009    11.269140
-    ## 6 398130.9 3706009     8.827670
+<center>
+  
+<table class="table" style="margin-left: auto; margin-right: auto;">
+
+<thead>
+
+<tr>
+
+<th style="text-align:right;"> x </th>
+
+<th style="text-align:right;"> y </th>
+
+<th style="text-align:right;"> height_meter </th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td style="text-align:right;"> 398074.1 </td>
+
+<td style="text-align:right;"> 3706009 </td>
+
+<td style="text-align:right;"> 7.155665 </td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:right;"> 398102.9 </td>
+
+<td style="text-align:right;"> 3706009 </td>
+
+<td style="text-align:right;"> 5.658660 </td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:right;"> 398103.1 </td>
+
+<td style="text-align:right;"> 3706009 </td>
+
+<td style="text-align:right;"> 5.658660 </td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:right;"> 398108.4 </td>
+
+<td style="text-align:right;"> 3706009 </td>
+
+<td style="text-align:right;"> 5.650502 </td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:right;"> 398126.6 </td>
+
+<td style="text-align:right;"> 3706009 </td>
+
+<td style="text-align:right;"> 11.269140 </td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:right;"> 398130.9 </td>
+
+<td style="text-align:right;"> 3706009 </td>
+
+<td style="text-align:right;"> 8.827670 </td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</center>
 
 ``` r
 trees$height_ft <- conv_unit( trees$height_meter, "m", "ft"  ) # create column with tree heights in feet
 
 head( trees ) %>% kable() %>% kable_styling() # view data set with measures in feet
 ```
+<center>
 
-    ##          x       y height_meter height_ft
-    ## 1 398074.1 3706009     7.155665  23.47659
-    ## 2 398102.9 3706009     5.658660  18.56516
-    ## 3 398103.1 3706009     5.658660  18.56516
-    ## 4 398108.4 3706009     5.650502  18.53839
-    ## 5 398126.6 3706009    11.269140  36.97224
-    ## 6 398130.9 3706009     8.827670  28.96217
+<table class="table" style="margin-left: auto; margin-right: auto;">
+
+<thead>
+
+<tr>
+
+<th style="text-align:right;"> x </th>
+
+<th style="text-align:right;"> y </th>
+
+<th style="text-align:right;"> height_meter </th>
+
+<th style="text-align:right;"> height_ft </th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td style="text-align:right;"> 398074.1 </td>
+
+<td style="text-align:right;"> 3706009 </td>
+
+<td style="text-align:right;"> 7.155665 </td>
+
+<td style="text-align:right;"> 23.47659 </td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:right;"> 398102.9 </td>
+
+<td style="text-align:right;"> 3706009 </td>
+
+<td style="text-align:right;"> 5.658660 </td>
+
+<td style="text-align:right;"> 18.56516 </td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:right;"> 398103.1 </td>
+
+<td style="text-align:right;"> 3706009 </td>
+
+<td style="text-align:right;"> 5.658660 </td>
+
+<td style="text-align:right;"> 18.56516 </td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:right;"> 398108.4 </td>
+
+<td style="text-align:right;"> 3706009 </td>
+
+<td style="text-align:right;"> 5.650502 </td>
+
+<td style="text-align:right;"> 18.53839 </td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:right;"> 398126.6 </td>
+
+<td style="text-align:right;"> 3706009 </td>
+
+<td style="text-align:right;"> 11.269140 </td>
+
+<td style="text-align:right;"> 36.97224 </td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:right;"> 398130.9 </td>
+
+<td style="text-align:right;"> 3706009 </td>
+
+<td style="text-align:right;"> 8.827670 </td>
+
+<td style="text-align:right;"> 28.96217 </td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</center>
 
 ``` r
 summary( trees ) %>% kable() %>% kable_styling()
 ```
+<center>
 
-    ##        x                y            height_meter      height_ft     
-    ##  Min.   :397991   Min.   :3704991   Min.   : 1.495   Min.   : 4.905  
-    ##  1st Qu.:398277   1st Qu.:3705224   1st Qu.: 3.973   1st Qu.:13.033  
-    ##  Median :398527   Median :3705425   Median : 4.925   Median :16.157  
-    ##  Mean   :398527   Mean   :3705468   Mean   : 6.190   Mean   :20.307  
-    ##  3rd Qu.:398812   3rd Qu.:3705732   3rd Qu.: 7.770   3rd Qu.:25.493  
-    ##  Max.   :399009   Max.   :3706009   Max.   :27.568   Max.   :90.445
+<table class="table" style="margin-left: auto; margin-right: auto;">
+
+<thead>
+
+<tr>
+
+<th style="text-align:left;"> </th>
+
+<th style="text-align:left;"> x </th>
+
+<th style="text-align:left;"> y </th>
+
+<th style="text-align:left;"> height_meter </th>
+
+<th style="text-align:left;"> height_ft </th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td style="text-align:left;"> </td>
+
+<td style="text-align:left;"> Min. :397991 </td>
+
+<td style="text-align:left;"> Min. :3704991 </td>
+
+<td style="text-align:left;"> Min. : 1.495 </td>
+
+<td style="text-align:left;"> Min. : 4.905 </td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;"> </td>
+
+<td style="text-align:left;"> 1st Qu.:398277 </td>
+
+<td style="text-align:left;"> 1st Qu.:3705224 </td>
+
+<td style="text-align:left;"> 1st Qu.: 3.973 </td>
+
+<td style="text-align:left;"> 1st Qu.:13.033 </td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;"> </td>
+
+<td style="text-align:left;"> Median :398527 </td>
+
+<td style="text-align:left;"> Median :3705425 </td>
+
+<td style="text-align:left;"> Median : 4.925 </td>
+
+<td style="text-align:left;"> Median :16.157 </td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;"> </td>
+
+<td style="text-align:left;"> Mean :398527 </td>
+
+<td style="text-align:left;"> Mean :3705468 </td>
+
+<td style="text-align:left;"> Mean : 6.190 </td>
+
+<td style="text-align:left;"> Mean :20.307 </td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;"> </td>
+
+<td style="text-align:left;"> 3rd Qu.:398812 </td>
+
+<td style="text-align:left;"> 3rd Qu.:3705732 </td>
+
+<td style="text-align:left;"> 3rd Qu.: 7.770 </td>
+
+<td style="text-align:left;"> 3rd Qu.:25.493 </td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;"> </td>
+
+<td style="text-align:left;"> Max. :399009 </td>
+
+<td style="text-align:left;"> Max. :3706009 </td>
+
+<td style="text-align:left;"> Max. :27.568 </td>
+
+<td style="text-align:left;"> Max. :90.445 </td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</center>
 
 
 <p> We can save the raster file of the plot and the CSV file of tree height data with the following functions: </p>
@@ -926,14 +1447,119 @@ writeRaster( chm, here("data/lidar/raster/2333.tif") )
 head ( read.csv( here("data/csv/trees_2333.csv"), col.names = c("id", "x", "y", "height_meter", "height_ft"), stringsAsFactors = FALSE ) ) %>% kable() %>% kable_styling()
 ```
 
-    ##   id        x       y height_meter height_ft
-    ## 1  1 398074.1 3706009     7.155665  23.47659
-    ## 2  2 398102.9 3706009     5.658660  18.56516
-    ## 3  3 398103.1 3706009     5.658660  18.56516
-    ## 4  4 398108.4 3706009     5.650502  18.53839
-    ## 5  5 398126.6 3706009    11.269140  36.97224
-    ## 6  6 398130.9 3706009     8.827670  28.96217
-    
+<center>
+  
+<table class="table" style="margin-left: auto; margin-right: auto;">
+
+<thead>
+
+<tr>
+
+<th style="text-align:right;"> id </th>
+
+<th style="text-align:right;"> x </th>
+
+<th style="text-align:right;"> y </th>
+
+<th style="text-align:right;"> height_meter </th>
+
+<th style="text-align:right;"> height_ft </th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td style="text-align:right;"> 1 </td>
+
+<td style="text-align:right;"> 398074.1 </td>
+
+<td style="text-align:right;"> 3706009 </td>
+
+<td style="text-align:right;"> 7.155665 </td>
+
+<td style="text-align:right;"> 23.47659 </td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:right;"> 2 </td>
+
+<td style="text-align:right;"> 398102.9 </td>
+
+<td style="text-align:right;"> 3706009 </td>
+
+<td style="text-align:right;"> 5.658660 </td>
+
+<td style="text-align:right;"> 18.56516 </td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:right;"> 3 </td>
+
+<td style="text-align:right;"> 398103.1 </td>
+
+<td style="text-align:right;"> 3706009 </td>
+
+<td style="text-align:right;"> 5.658660 </td>
+
+<td style="text-align:right;"> 18.56516 </td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:right;"> 4 </td>
+
+<td style="text-align:right;"> 398108.4 </td>
+
+<td style="text-align:right;"> 3706009 </td>
+
+<td style="text-align:right;"> 5.650502 </td>
+
+<td style="text-align:right;"> 18.53839 </td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:right;"> 5 </td>
+
+<td style="text-align:right;"> 398126.6 </td>
+
+<td style="text-align:right;"> 3706009 </td>
+
+<td style="text-align:right;"> 11.269140 </td>
+
+<td style="text-align:right;"> 36.97224 </td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:right;"> 6 </td>
+
+<td style="text-align:right;"> 398130.9 </td>
+
+<td style="text-align:right;"> 3706009 </td>
+
+<td style="text-align:right;"> 8.827670 </td>
+
+<td style="text-align:right;"> 28.96217 </td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</center>
 
 
 <hr>
