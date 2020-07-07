@@ -1557,7 +1557,7 @@ head ( read.csv( here("data/csv/trees_2333.csv"), col.names = c("id", "x", "y", 
 
 <p markdown="1"> **Note:** For this tutorial, we will use Google Maps to conduct our automated vs manual remote tree census comparison. However, since Google Maps are proprietary, to access them you must request an API code from [Google's Cloud Services](https://cloud.google.com/maps-platform/) and keep a credit card on record with Google. If you would like a completely open-source mapping option, ggmap also supports OpenStreetMap and Stamen Maps. Details on these mapping options are available [here](https://cfss.uchicago.edu/notes/raster-maps-with-ggmap/#obtain-map-images). </p>
 
-<p> To use the Google Maps, you will need to use the following code before following the rest of the tutorial: </p>
+<p> If you decide to use Google Maps, you will need to run the following code to register your API key before following the rest of the tutorial: </p>
 
 ```r
 
