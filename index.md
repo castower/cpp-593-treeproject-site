@@ -601,7 +601,7 @@ head( trees2 ) %>% kable() %>% kable_styling() # preview data set with new colum
 
 <th style="text-align:right;"> y </th>
 
-<th style="text-align:right;"> height\_meter </th>
+<th style="text-align:right;"> height_meter </th>
 
 </tr>
 
@@ -695,9 +695,9 @@ head( trees2 ) %>% kable() %>% kable_styling() # view new data set with measures
 
 <th style="text-align:right;"> y </th>
 
-<th style="text-align:right;"> height\_meter </th>
+<th style="text-align:right;"> height_meter </th>
 
-<th style="text-align:right;"> height\_ft </th>
+<th style="text-align:right;"> height_ft </th>
 
 </tr>
 
