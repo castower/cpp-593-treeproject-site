@@ -418,7 +418,7 @@ sqrt( 11250000 ) # 11,250,000 points
 
 - McPherson, E., & Simpson, J. (1999). Carbon dioxide reduction through urban forestry: guidelines for professional and volunteer tree planters. Albany, Calif: U.S. Dept. of Agriculture, Forest Service, Pacific Southwest Research Station. Retrieved May 31, 2020, from [https://permanent.access.gpo.gov/lps94433/psw-gtr171.pdf](https://permanent.access.gpo.gov/lps94433/psw-gtr171.pdf)
 
-- Muller, K. (2017, May 28). here: A Simpler Way to Find Your Files. Retrieved July 6, 2020, from [https://CRAN.R-project.org/package=here](https://CRAN.R-project.org/package=here
+- Muller, K. (2017, May 28). here: A Simpler Way to Find Your Files. Retrieved July 6, 2020, from [https://CRAN.R-project.org/package=here](https://CRAN.R-project.org/package=here)
 
 - National Oceanic and Atmospheric Administration (NOAA) (2020, July 1). What is lidar?. <i>National Ocean Service website.</i> Retrieved July 3, 2020, from [https://oceanservice.noaa.gov/facts/lidar.html](https://oceanservice.noaa.gov/facts/lidar.html)
    
@@ -426,7 +426,7 @@ sqrt( 11250000 ) # 11,250,000 points
 
 - Poon, L. (2018, December 28). Every tree in the city, mapped. Retrieved May 25, 2020, from [https://www.citylab.com/environment/2018/12/urban-tree-canopy-maps-artificial-intelligence-descartes-labs/578701/](https://www.citylab.com/environment/2018/12/urban-tree-canopy-maps-artificial-intelligence-descartes-labs/578701/)
 
-- Roussel, J. (2020, July 5). lidR: Airborne LiDAR Data Manipulation and Visualization for Forestry Applications. Retrieved July 6, 2020, from [https://CRAN.R-project.org/package=lidR](https://CRAN.R-project.org/package=lidR)
+- Roussel, J. et al. (2020, July 5). lidR: Airborne LiDAR Data Manipulation and Visualization for Forestry Applications. Retrieved July 6, 2020, from [https://CRAN.R-project.org/package=lidR](https://CRAN.R-project.org/package=lidR)
 
 - Reid, C., Clougherty, J., Shmool, J., & Kubzansky, L. (2017). Is all urban green space the same? A comparison of the health benefits of trees and grass in New York City. <i>International Journal of Environmental Research and Public Health, 14</i>(11), 1411. [doi:10.3390/ijerph14111411](https://www.mdpi.com/1660-4601/14/11/1411)
 
