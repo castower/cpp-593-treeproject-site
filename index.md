@@ -587,30 +587,201 @@ head( trees2 ) %>% kable() %>% kable_styling() # Create table of data
 
 colnames( trees2 ) <- c( "x", "y", "height_meter" ) # rename column to designate meters
 
-head( trees2 ) # preview data set with new column titles
+head( trees2 ) %>% kable() %>% kable_styling() # preview data set with new column titles
 ```
+<center>
 
-    ##          x       y height_meter
-    ## 1 398400.6 3705009     3.565190
-    ## 2 398401.9 3705009     3.421995
-    ## 3 398523.9 3705009     2.164520
-    ## 4 398578.6 3705009     7.366430
-    ## 5 398705.1 3705009     4.276970
-    ## 6 398713.9 3705009     4.272560
+<table class="table" style="margin-left: auto; margin-right: auto;">
+
+<thead>
+
+<tr>
+
+<th style="text-align:right;"> x </th>
+
+<th style="text-align:right;"> y </th>
+
+<th style="text-align:right;"> height\_meter </th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td style="text-align:right;"> 398400.6 </td>
+
+<td style="text-align:right;"> 3705009 </td>
+
+<td style="text-align:right;"> 3.565190 </td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:right;"> 398401.9 </td>
+
+<td style="text-align:right;"> 3705009 </td>
+
+<td style="text-align:right;"> 3.421995 </td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:right;"> 398523.9 </td>
+
+<td style="text-align:right;"> 3705009 </td>
+
+<td style="text-align:right;"> 2.164520 </td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:right;"> 398578.6 </td>
+
+<td style="text-align:right;"> 3705009 </td>
+
+<td style="text-align:right;"> 7.366430 </td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:right;"> 398705.1 </td>
+
+<td style="text-align:right;"> 3705009 </td>
+
+<td style="text-align:right;"> 4.276970 </td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:right;"> 398713.9 </td>
+
+<td style="text-align:right;">
+
+3705009
+
+</td>
+
+<td style="text-align:right;"> 4.272560 </td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</center>
 
 ``` r
 trees2$height_ft <- conv_unit( trees2$height_meter, "m", "ft"  ) # create column with tree heights in feet
 
-head( trees2 ) # view new data set with measures in feet
+head( trees2 ) %>% kable() %>% kable_styling() # view new data set with measures in feet
 ```
+<center>
+<table class="table" style="margin-left: auto; margin-right: auto;">
 
-    ##          x       y height_meter height_ft
-    ## 1 398400.6 3705009     3.565190 11.696818
-    ## 2 398401.9 3705009     3.421995 11.227019
-    ## 3 398523.9 3705009     2.164520  7.101444
-    ## 4 398578.6 3705009     7.366430 24.168077
-    ## 5 398705.1 3705009     4.276970 14.032054
-    ## 6 398713.9 3705009     4.272560 14.017585
+<thead>
+
+<tr>
+
+<th style="text-align:right;"> x </th>
+
+<th style="text-align:right;"> y </th>
+
+<th style="text-align:right;"> height\_meter </th>
+
+<th style="text-align:right;"> height\_ft </th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr> 
+
+<td style="text-align:right;"> 398400.6 </td>
+
+<td style="text-align:right;"> 3705009 </td>
+
+<td style="text-align:right;"> 3.565190 </td>
+
+<td style="text-align:right;"> 11.696818 </td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:right;"> 398401.9 </td>
+
+<td style="text-align:right;"> 3705009 </td>
+
+<td style="text-align:right;"> 3.421995 </td>
+
+<td style="text-align:right;"> 11.227019 </td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:right;"> 398523.9 </td>
+
+<td style="text-align:right;"> 3705009 </td>
+
+<td style="text-align:right;"> 2.164520 </td>
+
+<td style="text-align:right;"> 7.101444 </td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:right;"> 398578.6 </td>
+
+<td style="text-align:right;"> 3705009 </td>
+
+<td style="text-align:right;"> 7.366430 </td>
+
+<td style="text-align:right;"> 24.168077 </td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:right;"> 398705.1 </td>
+
+<td style="text-align:right;"> 3705009 </td>
+
+<td style="text-align:right;"> 4.276970 </td>
+
+<td style="text-align:right;"> 14.032054 </td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:right;"> 398713.9 </td>
+
+<td style="text-align:right;"> 3705009 </td>
+
+<td style="text-align:right;"> 4.272560 </td>
+
+<td style="text-align:right;"> 14.017585 </td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</center>
 
 
 <p> Now we will repeat these steps for our 2333 tile: </p> 
@@ -645,7 +816,7 @@ plot(chm, col = col)
 
 trees <- FindTreesCHM( chm )
 
-head(trees)
+head( trees ) %>% kable() %>% kable_styling()
 ```
 
     ##          x       y    height
@@ -661,7 +832,7 @@ head(trees)
 
 colnames( trees ) <- c( "x", "y", "height_meter" ) # rename column to designate meters
 
-head( trees ) # preview data set with new column titles
+head( trees ) %>% kable() %>% kable_styling() # preview data set with new column titles
 ```
 
     ##          x       y height_meter
@@ -675,7 +846,7 @@ head( trees ) # preview data set with new column titles
 ``` r
 trees$height_ft <- conv_unit( trees$height_meter, "m", "ft"  ) # create column with tree heights in feet
 
-head( trees ) # view data set with measures in feet
+head( trees ) %>% kable() %>% kable_styling() # view data set with measures in feet
 ```
 
     ##          x       y height_meter height_ft
@@ -697,7 +868,7 @@ trees <- FindTreesCHM( chm, fws=5 )
 
 colnames( trees ) <- c( "x", "y", "height_meter" ) # rename column to designate meters
 
-head( trees ) # preview data set with new column titles
+head( trees ) %>% kable() %>% kable_styling() # preview data set with new column titles
 ```
 
     ##          x       y height_meter
@@ -711,7 +882,7 @@ head( trees ) # preview data set with new column titles
 ``` r
 trees$height_ft <- conv_unit( trees$height_meter, "m", "ft"  ) # create column with tree heights in feet
 
-head( trees ) # view data set with measures in feet
+head( trees ) %>% kable() %>% kable_styling() # view data set with measures in feet
 ```
 
     ##          x       y height_meter height_ft
@@ -723,7 +894,7 @@ head( trees ) # view data set with measures in feet
     ## 6 398130.9 3706009     8.827670  28.96217
 
 ``` r
-summary( trees )
+summary( trees ) %>% kable() %>% kable_styling()
 ```
 
     ##        x                y            height_meter      height_ft     
@@ -752,7 +923,7 @@ writeRaster( chm, here("data/lidar/raster/2333.tif") )
 ``` r
 # Preview CSV file
 
-head ( read.csv( here("data/csv/trees_2333.csv"), col.names = c("id", "x", "y", "height_meter", "height_ft"), stringsAsFactors = FALSE ) )
+head ( read.csv( here("data/csv/trees_2333.csv"), col.names = c("id", "x", "y", "height_meter", "height_ft"), stringsAsFactors = FALSE ) ) %>% kable() %>% kable_styling()
 ```
 
     ##   id        x       y height_meter height_ft
