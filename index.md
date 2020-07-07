@@ -2004,13 +2004,11 @@ googleplot
 
 <h3 markdown="1"> **Manual** </h3>
 
-<p markdown="1"> Using the coordinates we found in our CSV file, we can upload the plots to the free mapping software [Google MyMaps](https://www.google.com/maps/about/mymaps/):
-
-</p>
+<p markdown="1"> Using the coordinates we found in our CSV file, we can upload the plots to the free mapping software [Google MyMaps](https://www.google.com/maps/about/mymaps/): </p>
 
 <center>
 
-<img src="data/websitetree-project_files/figure-gfm/auto-tree-census.png">
+<img src="data/website/tree-project_files/figure-gfm/auto-tree-census.png">
 
 </center>
 
