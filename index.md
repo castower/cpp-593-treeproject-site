@@ -811,6 +811,8 @@ plot(chm, col = col)
 
 </center>
 
+<br>
+
 ``` r
 # Find trees
 
@@ -1547,6 +1549,41 @@ head ( read.csv( here("data/csv/trees_2333.csv"), col.names = c("id", "x", "y", 
 
 </center>
 
+<h2 id= "Mapping">Mapping Trees</h2>
+
+<h3>Automatic</h3>
+
+<p markdown="1"> Now that we have a **Canopy Height Model** raster file created, we can map our trees using the `sp` and `ggmap` packages. </p>
+
+<p markdown="1"> **Note:** For this tutorial, we will use Google Maps to conduct our automated vs manual remote tree census comparison. However, since Google Maps are proprietary, to access them you must request an API code from [Google's Cloud Services](https://cloud.google.com/maps-platform/) and keep a credit card on record with Google. If you would like a completely open-source mapping option, ggmap also supports OpenStreetMap and Stamen Maps. Details on these mapping options are available [here](https://cfss.uchicago.edu/notes/raster-maps-with-ggmap/#obtain-map-images). </p>
+
+<p> To use the Google Maps, you will need to use the following code before following the rest of the tutorial: </p>
+
+```r
+
+register_google(key = "[your API key]") # for temporary use of key
+
+register_google(key = "[your API key]", write = TRUE) # for registering key in .Renviron file
+
+```
+
+<p markdown="1"> More details on ggmap's Google API key requirements can be found on the package's [Github repo](https://github.com/dkahle/ggmap#attention). </p>
+
+<p markdown="1"> To begin the mapping process, first we must use the `sp` package to convert our LiDAR 3D point cloud dimensions into traditional latitude and longitude measurements. We will store these in the `lat.lon` variable: </p>
+
+```r
+coords <- trees[ c("x","y") ]
+names( trees ) <- c("id", "x.meters","y.meters","height")
+crs <- sp::CRS( "+proj=utm +zone=12 +datum=NAD83 +units=m +no_defs" )
+df <- sp::SpatialPointsDataFrame( coords, proj4string=crs, data=trees ) 
+
+df2 <- spTransform( df, CRS("+proj=longlat +datum=WGS84") )
+
+lat.lon <- coordinates( df2 ) %>% as.data.frame()
+lat.lon$height <- trees$height
+```
+
+<p> Next, we will use ggmap to plot the locations of our trees on a map: </p>
 
 <hr>
 
