@@ -492,16 +492,90 @@ plot( chm2, col = col )
 # Find heights of objects in tile that are at least 1.37 meters tall
 
 trees2 <- FindTreesCHM( chm2 ) # function from rLiDAR package
-head( trees2 )
+head( trees2 ) %>% kable() %>% kable_styling() # Create table of data
 ```
+<table class="table" style="margin-left: auto; margin-right: auto;">
 
-    ##          x       y   height
-    ## 1 398400.6 3705009 3.565190
-    ## 2 398401.9 3705009 3.421995
-    ## 3 398523.9 3705009 2.164520
-    ## 4 398578.6 3705009 7.366430
-    ## 5 398705.1 3705009 4.276970
-    ## 6 398713.9 3705009 4.272560
+<thead>
+
+<tr>
+
+<th style="text-align:right;"> x </th>
+
+<th style="text-align:right;"> y </th>
+
+<th style="text-align:right;"> height </th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td style="text-align:right;"> 398400.6 </td>
+
+<td style="text-align:right;"> 3705009 </td>
+
+<td style="text-align:right;"> 3.565190 </td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:right;"> 398401.9 </td>
+
+<td style="text-align:right;"> 3705009 </td>
+
+<td style="text-align:right;"> 3.421995 </td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:right;"> 398523.9 </td>
+
+<td style="text-align:right;"> 3705009 </td>
+
+<td style="text-align:right;"> 2.164520 </td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:right;"> 398578.6 </td>
+
+<td style="text-align:right;"> 3705009 </td>
+
+<td style="text-align:right;"> 7.366430 </td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:right;"> 398705.1 </td>
+
+<td style="text-align:right;"> 3705009 </td>
+
+<td style="text-align:right;"> 4.276970 </td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:right;"> 398713.9 </td>
+
+<td style="text-align:right;"> 3705009 </td>
+
+<td style="text-align:right;"> 4.272560 </td>
+
+</tr>
+
+</tbody>
+
+</table>
+
 
 
 <p> After we find the heights of objects in meters, we can also find the measures in feet: </p>
