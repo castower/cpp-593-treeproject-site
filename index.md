@@ -1560,13 +1560,15 @@ raster.2333 <- raster( here("data/lidar/raster/2333.tif") )
 plot( raster.2333, col = col )
 ```
 
-<img src="tree-project_files/figure-gfm/unnamed-chunk-23-1.png">
+<center>
 
-<br>
+<img src="data/website/tree-project_files/figure-gfm/unnamed-chunk-23-1.png">
+
+<center>
 
 <h2 id= "Mapping">Mapping Trees</h2>
 
-<h3>Automatic</h3>
+<h3 markdown="1">**Automatic**</h3>
 
 <p markdown="1"> Now that we have a **Canopy Height Model** raster file created, we can map our trees using the `sp` and `ggmap` packages. </p>
 
@@ -1599,6 +1601,492 @@ lat.lon$height <- trees$height
 ```
 
 <p> Next, we will use ggmap to plot the locations of our trees on a map: </p>
+
+``` r
+# Open-Source Stamen version
+
+qmplot( x, y, data = lat.lon, geom="blank",
+        source="stamen", maptype = "terrain" )  +
+         geom_point( shape=3, color="red" )
+```
+<center>
+  
+<img src="data/website/tree-project_files/figure-gfm/unnamed-chunk-26-1.png">
+
+</center>
+
+<br>
+
+``` r
+# Google Maps version requiring API key
+
+qmplot( x, y, data = lat.lon, geom="blank",
+        source="google", maptype = "satellite" )  +
+         geom_point( shape=3, color="red" )
+```
+
+<center>
+
+<img src="data/website/tree-project_files/figure-gfm/unnamed-chunk-27-1.png">
+
+</center>
+
+<br>
+
+<p> If we zoom into the map at level of 18, we can see the individual trees and get a general idea of the automatic mapping function’s effectiveness: </p>
+
+``` r
+# zoomed view 
+
+googleplot <- qmplot( x, y, data = lat.lon, geom = "blank", zoom=18,
+        source="google", maptype = "satellite" )  +
+        geom_point( shape=1, color="red", alpha=0.7, aes( size=height, max=5 ) )
+googleplot
+```
+<center>
+  
+<img src="data/website/tree-project_files/figure-gfm/unnamed-chunk-28-1.png">
+
+</center>
+
+<br>
+
+<p> We can review the latitude and longitude of the identified trees by examining the `lat.lon` data: </p>
+
+``` r
+lat.lon.csv <- lat.lon
+
+# label columns
+names( lat.lon.csv ) <- c("longitude","latitude","height")
+
+# order columns
+lat.lon.csv <- lat.lon.csv[,c("latitude","longitude","height")]
+
+# view longitude, latitude, and height of trees
+head( lat.lon.csv ) %>% kable() %>% kable_styling()
+```
+
+<center>
+
+<table class="table" style="margin-left: auto; margin-right: auto;">
+
+<thead>
+
+<tr>
+
+<th style="text-align:right;"> latitude </th>
+
+<th style="text-align:right;"> longitude </th>
+
+<th style="text-align:right;"> height </th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td style="text-align:right;"> 33.48878 </td>
+
+<td style="text-align:right;"> -112.0911 </td>
+
+<td style="text-align:right;"> 19.94970 </td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:right;"> 33.48872 </td>
+
+<td style="text-align:right;"> -112.0965 </td>
+
+<td style="text-align:right;"> 28.90515 </td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:right;"> 33.48874 </td>
+
+<td style="text-align:right;"> -112.0944 </td>
+
+<td style="text-align:right;"> 11.71522 </td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:right;"> 33.48875 </td>
+
+<td style="text-align:right;"> -112.0932 </td>
+
+<td style="text-align:right;"> 13.27365 </td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:right;"> 33.48876 </td>
+
+<td style="text-align:right;"> -112.0924 </td>
+
+<td style="text-align:right;"> 43.65115 </td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:right;"> 33.48877 </td>
+
+<td style="text-align:right;"> -112.0907 </td>
+
+<td style="text-align:right;"> 20.22690 </td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</center>
+
+<p> We can also create an output of this data that can be copied and pasted for sample analysis of 25 trees: </p>
+
+``` r
+lat.lon.sample <- head(lat.lon.csv, 25)
+dput(lat.lon.sample)
+```
+
+    ## structure(list(latitude = c(33.4887765925544, 33.4887200718144, 
+    ## 33.4887387207169, 33.4887490762573, 33.4887562900649, 33.488771743582, 
+    ## 33.4887761002053, 33.4887769523569, 33.4887803602062, 33.4887816851538, 
+    ## 33.4887852805171, 33.4887207633205, 33.4887354993676, 33.4887682183598, 
+    ## 33.4887687864017, 33.4887000355671, 33.4887014643409, 33.4887166915127, 
+    ## 33.4887301855912, 33.4887327492348, 33.4887570225238, 33.4887584428876, 
+    ## 33.4886943510338, 33.4887171783276, 33.4887218322838), longitude = c(-112.091129870331, 
+    ## -112.096511055517, -112.094401588091, -112.09322846506, -112.092410507362, 
+    ## -112.090656202371, -112.090161122193, -112.090064258668, -112.089676804525, 
+    ## -112.089526127896, -112.089117148426, -112.095413158141, -112.093744956394, 
+    ## -112.090031857833, -112.089967282153, -112.096736842396, -112.09657540368, 
+    ## -112.094853390005, -112.093325101785, -112.093034511656, -112.090279284906, 
+    ## -112.090117845736, -112.096360038394, -112.093777017421, -112.093249650282
+    ## ), height = c(19.9497047244094, 28.9051509186352, 11.7152230971129, 
+    ## 13.2736548556431, 43.6511482939632, 20.2269028871392, 19.9992454068242, 
+    ## 20.0284448818898, 20.5833661417322, 20.0889107611549, 31.4985892388452, 
+    ## 16.6064304461943, 12.3624999999999, 20.0950787401575, 20.3713582677165, 
+    ## 26.7971784776903, 35.7228346456694, 13.0542322834645, 28.2633530183727, 
+    ## 41.6245078740157, 51.1814632545931, 19.841371391076, 16.5540354330708, 
+    ## 12.7031496062992, 12.7728346456692)), row.names = c("1", "2", 
+    ## "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", 
+    ## "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25"
+    ## ), class = "data.frame")
+
+<p> The complete latitude, longitude, and height data can be saved to a CSV file with the following code: </p>
+
+``` r
+write.csv( lat.lon.csv, here("data/csv/lat-lon.csv") )
+```
+
+<p> Similarly, the zoomed view of the map can also be saved in PDF and PNG format: </p>
+
+``` r
+# Save to PDF
+
+pdf( here("data/raw/trees-plot.pdf") )
+
+# zoomed view 
+
+qmplot( x, y, data = lat.lon, geom = "blank", zoom=18,
+        source="google", maptype = "satellite" )  +
+        geom_point( shape=1, color="red", alpha=0.7, aes( size=height, max=5 ) )
+
+dev.off()
+```
+
+``` r
+# Save to PNG
+
+png( here("data/raw/trees-plot.png") )
+
+# zoomed view 
+
+qmplot( x, y, data = lat.lon, geom = "blank", zoom=18,
+        source="google", maptype = "satellite" )  +
+        geom_point( shape=1, color="red", alpha=0.7, aes( size=height, max=5 ) )
+
+dev.off()
+```
+
+<p markdown="1"> Another option for tree identification is to use the `filter_poi()` option to filter out all pointclouds that are not high vegetation: </p>
+
+``` r
+las3 <- filter_poi( las, Classification == LASHIGHVEGETATION )
+chm3 <- lidR::grid_canopy( las3, res = 1, p2r() )
+plot(chm3, col = col)
+```
+<center>
+  
+<img src="data/website/tree-project_files/figure-gfm/unnamed-chunk-34-1.png">
+
+</center>
+
+<br>
+
+``` r
+trees3 <- FindTreesCHM( chm3, fws=5 )
+trees3
+```
+
+    ##            x       y   height
+    ## 1   398457.5 3706000 11.98587
+    ## 2   398428.5 3706000  8.81709
+    ## 3   398719.5 3705978 11.07696
+    ## 4   398724.5 3705976 10.55877
+    ## 5   398481.5 3705964 10.11997
+    ## 6   398861.5 3705904  9.98835
+    ## 7   398986.5 3705898  7.14744
+    ## 8   398643.5 3705838  7.70684
+    ## 9   398419.5 3705826  7.10317
+    ## 10  398086.5 3705826 10.42341
+    ## 11  398417.5 3705824  7.47378
+    ## 12  398906.5 3705798  9.29089
+    ## 13  398886.5 3705796 22.05767
+    ## 14  398890.5 3705796 22.01401
+    ## 15  398194.5 3705788 14.66186
+    ## 16  398023.5 3705786  9.41430
+    ## 17  398026.5 3705786  9.11861
+    ## 18  398898.5 3705784 12.72933
+    ## 19  398400.5 3705782 10.27490
+    ## 20  398737.5 3705778  8.62154
+    ## 21  398818.5 3705774  8.53372
+    ## 22  398462.5 3705760 11.00306
+    ## 23  398194.5 3705748 10.87568
+    ## 24  398123.5 3705746  9.62466
+    ## 25  398098.5 3705738  9.27916
+    ## 26  398065.5 3705730 10.75934
+    ## 27  398844.5 3705708  9.20155
+    ## 28  398251.5 3705706  9.33226
+    ## 29  398023.5 3705678  6.81278
+    ## 30  398023.5 3705674  7.15583
+    ## 31  398499.5 3705656  9.41144
+    ## 32  398497.5 3705646 11.02849
+    ## 33  398498.5 3705630  9.19225
+    ## 34  398025.5 3705622 10.23926
+    ## 35  398355.5 3705612  8.83242
+    ## 36  398357.5 3705610  8.39920
+    ## 37  398194.5 3705606 10.14133
+    ## 38  398551.5 3705600  9.76690
+    ## 39  398086.5 3705588 14.83711
+    ## 40  398113.5 3705586  8.86532
+    ## 41  398311.5 3705586  8.95854
+    ## 42  398163.5 3705580 10.83024
+    ## 43  398525.5 3705576  9.73937
+    ## 44  398147.5 3705572  9.71321
+    ## 45  398214.5 3705536 11.88230
+    ## 46  398564.5 3705536  9.40990
+    ## 47  398570.5 3705534  8.67144
+    ## 48  398141.5 3705510 10.70429
+    ## 49  398259.5 3705504  7.42356
+    ## 50  398243.5 3705484 15.10097
+    ## 51  398250.5 3705460 16.43661
+    ## 52  398284.5 3705440  8.62589
+    ## 53  398280.5 3705436  9.02400
+    ## 54  398502.5 3705418 18.15565
+    ## 55  398495.5 3705412 18.82036
+    ## 56  398434.5 3705408 11.98654
+    ## 57  398848.5 3705406 13.37598
+    ## 58  398460.5 3705404  8.71189
+    ## 59  398464.5 3705404  8.88210
+    ## 60  398021.5 3705386  8.85311
+    ## 61  398021.5 3705368  9.89818
+    ## 62  398160.5 3705362  9.95102
+    ## 63  398985.5 3705358 12.07045
+    ## 64  398389.5 3705346  9.77625
+    ## 65  398394.5 3705342  9.53877
+    ## 66  398288.5 3705338  8.68118
+    ## 67  398287.5 3705334  9.67160
+    ## 68  398085.5 3705332  8.09408
+    ## 69  398290.5 3705332  9.48844
+    ## 70  398212.5 3705330 10.15127
+    ## 71  398217.5 3705330 10.66135
+    ## 72  398111.5 3705310 11.65281
+    ## 73  398411.5 3705302  9.27059
+    ## 74  398991.5 3705302 10.34748
+    ## 75  398086.5 3705298 12.58624
+    ## 76  398539.5 3705296  6.53200
+    ## 77  398224.5 3705286  8.73017
+    ## 78  398180.5 3705276  8.10982
+    ## 79  398182.5 3705272  8.90174
+    ## 80  398176.5 3705270  7.88590
+    ## 81  398288.5 3705270  7.24365
+    ## 82  398549.5 3705258  8.11337
+    ## 83  398287.5 3705250 11.20157
+    ## 84  398892.5 3705242 19.70332
+    ## 85  398513.5 3705228  8.45177
+    ## 86  398436.5 3705220  7.47019
+    ## 87  398014.5 3705216  7.37829
+    ## 88  398438.5 3705216  7.58483
+    ## 89  398014.5 3705214  7.31749
+    ## 90  398011.5 3705212  7.09315
+    ## 91  398034.5 3705192 10.29160
+    ## 92  398482.5 3705180  6.80971
+    ## 93  398385.5 3705176 10.98315
+    ## 94  398034.5 3705164  9.76052
+    ## 95  398039.5 3705162  8.69895
+    ## 96  398467.5 3705158  8.85205
+    ## 97  398937.5 3705148  9.59308
+    ## 98  398933.5 3705140  7.14666
+    ## 99  398221.5 3705136  8.75194
+    ## 100 398221.5 3705134  9.53563
+    ## 101 398904.5 3705130  9.61090
+    ## 102 398922.5 3705128  7.73789
+    ## 103 398903.5 3705116  7.10923
+    ## 104 398920.5 3705116  8.22595
+    ## 105 398906.5 3705114  8.18937
+    ## 106 398886.5 3705100  9.42668
+    ## 107 398915.5 3705098  7.66963
+    ## 108 398038.5 3705088 12.14105
+    ## 109 398638.5 3705042 10.37473
+    ## 110 398535.5 3705030  9.26015
+    ## 111 398436.5 3705002  9.12088
+    ## 112 398833.5 3705000  9.96004
+    ## 113 398440.5 3704998  9.00560
+    ## 114 398003.5 3704996 17.70507
+    ## 115 398302.5 3704996 10.87132
+    ## 116 398541.5 3704996  6.92000
+
+<p> However, as displayed here, the high vegetation filter not only removes excess point clouds, it also severely reduces the number of trees identified: </p>
+
+``` r
+coords <- trees3[ c("x","y") ]
+names( trees3 ) <- c( "x.meters","y.meters","height")
+crs2 <- sp::CRS( "+proj=utm +zone=12 +datum=NAD83 +units=m +no_defs" )
+df3 <- sp::SpatialPointsDataFrame( coords, proj4string=crs, data=trees3 ) 
+
+df4 <- spTransform( df3, CRS("+proj=longlat +datum=WGS84") )
+
+lat.lon2 <- coordinates( df4 ) %>% as.data.frame()
+lat.lon2$height <- trees3$height
+
+qmplot( x, y, data = lat.lon2, geom = "blank", zoom=18,
+        source="google", maptype = "satellite" )  +
+        geom_point( shape=1, color="red", alpha=0.7, aes( size=height, max=5 ) )
+```
+
+<center>
+  
+<img src="data/website/tree-project_files/figure-gfm/unnamed-chunk-35-1.png">
+
+</center>
+
+<br>
+
+<p> Therefore, we will use the complete unfiltered point cloud set: </p>
+
+``` r
+# zoomed view 
+
+googleplot <- qmplot( x, y, data = lat.lon, geom = "blank", zoom=18,
+        source="google", maptype = "satellite" )  +
+        geom_point( shape=1, color="red", alpha=0.7, aes( size=height, max=5 ) )
+googleplot
+```
+
+<center>
+  
+<img src="data/website/tree-project_files/figure-gfm/unnamed-chunk-36-1.png">
+
+</center>
+
+<br>
+
+<h3 markdown="1"> **Manual** </h3>
+
+<p markdown="1"> Using the coordinates we found in our CSV file, we can upload the plots to the free mapping software [Google MyMaps](https://www.google.com/maps/about/mymaps/):
+
+</p>
+
+<center>
+
+<img src="data/websitetree-project_files/figure-gfm/auto-tree-census.png">
+
+</center>
+
+<br>
+
+<p> Google MyMaps also allows us to conduct a manual tree census where we can plot all of the trees individually on the map. </p>
+
+<center>
+
+<img src="data/website/tree-project_files/figure-gfm/manual-tree-census.png">
+
+</center>
+
+<br>
+
+<p> A comparison of the layers allows us to see the overlap and discrepancies between manual remote tree identification and the automated algorithm. The green trees were marked manually and the red circles were identified by the coded algorithm: </p>
+
+<center>
+
+<img src="data/website/tree-project_files/figure-gfm/mixed-tree-census.png">
+
+</center>
+
+<br>
+
+<h3 markdown="1"> **Comparison** </h3>
+
+<p> An interactive version of the Google MyMap can be explored here: </p>
+
+<center>
+
+<iframe src="https://www.google.com/maps/d/u/1/embed?mid=1TRSyvnKPzoMj13cSeT6JYMihP_dMPWhJ" width="640" height="480"> </iframe>
+
+</center>
+
+<p> To view the automated and manual plot layers, click the button to the left of the **Tree Census** title: </p>
+
+<center>
+
+<img src="data/website/tree-project_files/figure-gfm/layersbutton.png">
+
+</center>
+
+<br>
+
+<p> This will open the option to select between the imported layer of automated data points that was generated from the lat-lon CSV and the manually marked trees: </p>
+
+<center>
+
+<img src="data/website/tree-project_files/figure-gfm/layers-view.png">
+
+</center>
+
+<hr>
+
+<br>
+
+<center>
+
+<h1 id="Discussion"> Discussion </h1>
+
+</center>
+
+<p> The automated tree census identified 278 trees in the sample census area while the manual tree census found 321 trees. This indicates that the algorithm was 86.6% accurate. </p>
+
+<p> The automated tree census had some flaws, particularly in the area of misidentifying tall, narrow points on buildings as trees, overlooking palm trees due to their small circumference/crown shape, and miscounting overlapping trees in heavily canvassed areas. </p>
+
+<p> However, the algorithm did not seem to fall prey to serious systematic or measurement errors that could severely bias results—-it consistently undercounted trees and overcounted buildings on all the blocks in the sample area. </p>
+
+<p> Overall, the open-source tools for conducting remote-tree censuses are extremely advanced and relatively accurate. They provide a promising solution to provide a baseline estimate of the number of trees located in sparsely canvassed areas before organizations invest in costly traditional tree census methods. </p>
+
+<p> Future research to further explore potential areas of systematic and measurement bias and identify better methods for point cloud layer filteration can make these tools even more effective for non-profit and governmental organizations. </p>
+
+<hr>
+
+<br>
 
 <hr>
 
