@@ -2086,10 +2086,6 @@ googleplot
 
 <hr>
 
-<br>
-
-<hr>
-
 <center>
   <h1 id = "References">References</h1>
 </center>
