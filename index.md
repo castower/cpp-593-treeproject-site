@@ -1611,7 +1611,7 @@ qmplot( x, y, data = lat.lon, geom="blank",
 ```
 <center>
   
-<img src="data/website/tree-project_files/figure-gfm/unnamed-chunk-26-1.png">
+<img src="data/website/tree-project_files/figure-gfm/unnamed-chunk-25-1.png">
 
 </center>
 
@@ -1627,7 +1627,7 @@ qmplot( x, y, data = lat.lon, geom="blank",
 
 <center>
 
-<img src="data/website/tree-project_files/figure-gfm/unnamed-chunk-27-1.png">
+<img src="data/website/tree-project_files/figure-gfm/unnamed-chunk-26-1.png">
 
 </center>
 
@@ -1645,7 +1645,7 @@ googleplot
 ```
 <center>
   
-<img src="data/website/tree-project_files/figure-gfm/unnamed-chunk-28-1.png">
+<img src="data/website/tree-project_files/figure-gfm/unnamed-chunk-27-1.png">
 
 </center>
 
