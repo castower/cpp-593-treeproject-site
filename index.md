@@ -386,9 +386,9 @@ chm2  <- lidR::grid_canopy( las2, res = 1, p2r() )     # Create Canopy Height Mo
 plot( chm2, col = col )
 ```
 
-<center markdown="1">
+<center>
 
-![](data/website/tree-project_files/figure-gfm/unnamed-chunk-6-1.png)<!-- -->
+<img src="data/website/tree-project_files/figure-gfm/unnamed-chunk-6-1.png">
 
 </center>
 
@@ -405,7 +405,7 @@ plot( chm2, col = col )
 
 <center>
 
-![](data/website/tree-project_files/figure-gfm/unnamed-chunk-7-1.png)<!-- -->
+<img src="data/website/tree-project_files/figure-gfm/unnamed-chunk-7-1.png">
 
 </center>
 
@@ -419,7 +419,7 @@ plot( chm2, col = col )
 
 <center>
 
-![](data/website/tree-project_files/figure-gfm/unnamed-chunk-8-1.png)<!-- -->
+<img src="data/website/tree-project_files/figure-gfm/unnamed-chunk-8-1.png">
 
 </center>
 
@@ -432,7 +432,7 @@ plot( chm2, col = col )
 
 <center>
 
-![](data/website/tree-project_files/figure-gfm/unnamed-chunk-9-1.png)<!-- -->
+<img src="data/website/tree-project_files/figure-gfm/unnamed-chunk-9-1.png">
 
 </center>
 
@@ -445,7 +445,7 @@ plot( chm2, col = col )
 
 <center>
 
-![](data/website/tree-project_files/figure-gfm/unnamed-chunk-10-1.png)<!-- -->
+<img src="data/website/tree-project_files/figure-gfm/unnamed-chunk-10-1.png">
 
 </center>
 
@@ -465,7 +465,7 @@ plot( chm2, col = col )
 
 <center>
 
-![](data/website/tree-project_files/figure-gfm/unnamed-chunk-12-1.png)<!-- -->
+<img src="data/website/tree-project_files/figure-gfm/unnamed-chunk-12-1.png">
 
 </center>
 
@@ -541,7 +541,7 @@ chm  <- lidR::grid_canopy( las, 0.25, pitfree(c(0,2,5,10,15), c(0,1), subcircle 
 plot(chm, col = col)
 ```
 
-![](data/website/tree-project_files/figure-gfm/unnamed-chunk-16-1.png)<!-- -->
+<img src="data/website/tree-project_files/figure-gfm/unnamed-chunk-16-1.png">
 
 ``` r
 # Find trees
