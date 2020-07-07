@@ -392,6 +392,7 @@ plot( chm2, col = col )
 
 </center>
 
+<br>
 
 <p> This plot displays the heights of the various items in the LiDAR data tile. Flat areas with a height of 0 meters are displayed in dark blue while tall areas with a height up to 30 meters are displayed in red. </p>
 
@@ -409,6 +410,8 @@ plot( chm2, col = col )
 
 </center>
 
+<br>
+
 <p> This reduction in the resolution worsens the plot </p>
 
 
@@ -423,6 +426,8 @@ plot( chm2, col = col )
 
 </center>
 
+<br>
+
 <p> Adjusting the points-to-raster algorithm's circle size slightly improves the graph, but keeps some holes in the plot. </p>
 
 ``` r
@@ -436,6 +441,8 @@ plot( chm2, col = col )
 
 </center>
 
+<br>
+
 <p> This improves the resolution of the plot, but some holes still remain. </p>
 
 ``` r
@@ -448,6 +455,8 @@ plot( chm2, col = col )
 <img src="data/website/tree-project_files/figure-gfm/unnamed-chunk-10-1.png">
 
 </center>
+
+<br>
 
 <p markdown="1"> This slightly increases the plot, but there are still some unclear plots. Therefore, we will try the package's `pitfree()` function: </p>
 
@@ -468,6 +477,8 @@ plot( chm2, col = col )
 <img src="data/website/tree-project_files/figure-gfm/unnamed-chunk-12-1.png">
 
 </center>
+
+<br>
 
 <p> This plot contains very few white spaces and provides a clear colorized analysis of the heights present in the tile. </p>
 
@@ -541,7 +552,11 @@ chm  <- lidR::grid_canopy( las, 0.25, pitfree(c(0,2,5,10,15), c(0,1), subcircle 
 plot(chm, col = col)
 ```
 
+<center>
+
 <img src="data/website/tree-project_files/figure-gfm/unnamed-chunk-16-1.png">
+
+</center>
 
 ``` r
 # Find trees
