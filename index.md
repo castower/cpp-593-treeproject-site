@@ -386,7 +386,7 @@ chm2  <- lidR::grid_canopy( las2, res = 1, p2r() )     # Create Canopy Height Mo
 plot( chm2, col = col )
 ```
 
-<center>
+<center markdown="1">
 
 ![](data/website/tree-project_files/figure-gfm/unnamed-chunk-6-1.png)<!-- -->
 
