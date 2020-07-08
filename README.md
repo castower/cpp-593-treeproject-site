@@ -34,4 +34,4 @@ library( "kableExtra" )   # Used to format tables
 library( "tidyverse" )    # Used for manipulating data and packages
 ```
 
-The LiDAR data set was accessed from Arizona State University Library’s [Map and Geospatial Hub](https://lib.asu.edu/geo). Tiles 2333.tif and 2433.tif from the Phoenix, Arizona USGS data set are used in the code-through. You can view details [here](https://lib.asu.edu/geo/news/robust-usgs-lidar-data-now-available).
+The LiDAR data set was accessed from Arizona State University Library’s [Map and Geospatial Hub](https://lib.asu.edu/geo). Tiles 2333.tif and 2433.tif from the Phoenix, Arizona USGS data set are used in the code-through. Details are available [here](https://lib.asu.edu/geo/news/robust-usgs-lidar-data-now-available).
