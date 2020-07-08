@@ -620,7 +620,7 @@ write.csv( lat.lon.csv, here("data/csv/lat-lon.csv") )
 ```{r, eval=FALSE}
 # Save to PDF
 
-pdf( here("data/raw/trees-plot.pdf") )
+pdf( here("data/output/trees-plot.pdf") )
 
 # zoomed view 
 
@@ -634,7 +634,7 @@ dev.off()
 ```{r, eval=FALSE}
 # Save to PNG
 
-png( here("data/raw/trees-plot.png") )
+png( here("data/output/trees-plot.png") )
 
 # zoomed view 
 
