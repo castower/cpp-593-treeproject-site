@@ -798,7 +798,7 @@ las  <- normalize_height( las, tin() )
 col  <- height.colors( 50 )
 
 # Create Canopy Height Model
-chm  <- lidR::grid_canopy( las, 0.25, pitfree(c(0,2,5,10,15), c(0,1), subcircle = 0.2) )
+chm  <- lidR::grid_canopy( las, res = 1, p2r() ) # This LiDAR tile's colorization does not change much with differing strategies
 ```
 
 ``` r
