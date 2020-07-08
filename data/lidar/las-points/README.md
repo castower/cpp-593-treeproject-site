@@ -1,0 +1,1 @@
+- Folder to store .las point clouds. The files are too large for storage on Github, but acquisition information can requested from the Arizona State University Library's [Map and Geospatial Hub](https://lib.asu.edu/geo). The LiDAR data was collected by the [United States Geological Survey (USGS)](https://lib.asu.edu/geo/news/robust-usgs-lidar-data-now-available).
