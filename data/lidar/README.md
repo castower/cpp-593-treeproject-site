@@ -1,1 +1,1 @@
-- 
+- Canopy Height Models rendered from LiDAR point clouds of Phoenix, Arizona. The data was collected by the United States Geological Survey (USGS) and accessed from the Arizona State University Library's [Map and Geospatial Hub](https://lib.asu.edu/geo). The ASU library can be contacted for the raw data. The .las files are too large for storage on the Github repo.
